@@ -50,12 +50,13 @@ Public Class Vareregistrering
 
             While antall > 0
 
-                Dim sqlvare = New MySqlCommand("insert into VARE (varenavn, varegruppe, bruk, tilstand, lager) values (@Varenavn, @Varegruppe, @Ubrukt, @Ren, @Lager)", tilkobling)
+                Dim sqlvare = New MySqlCommand("insert into VARE (varenavn, varegruppe, bruk, tilstand, lager, status) values (@Varenavn, @Varegruppe, @Ubrukt, @Ren, @Lager, @Tilgjengelig)", tilkobling)
                 sqlvare.Parameters.AddWithValue("@Varenavn", varenavn)
                 sqlvare.Parameters.AddWithValue("@Varegruppe", varegruppe)
                 sqlvare.Parameters.AddWithValue("@Ubrukt", "ubrukt")
                 sqlvare.Parameters.AddWithValue("@Ren", "ren")
                 sqlvare.Parameters.AddWithValue("@Lager", lager)
+                sqlvare.Parameters.AddWithValue("@Tilgjengelig", "tilgjengelig")
                 sqlvare.ExecuteNonQuery()
 
                 antall = antall - 1
