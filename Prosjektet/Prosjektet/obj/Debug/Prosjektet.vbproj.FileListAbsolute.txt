@@ -1,0 +1,28 @@
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\bin\Debug\Prosjektet.exe.config
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\bin\Debug\Prosjektet.exe
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\bin\Debug\Prosjektet.pdb
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\bin\Debug\Prosjektet.xml
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Form1.resources
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Meny.resources
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Resources.resources
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Vareregistrering.resources
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\obj\Debug\Prosjektet.vbproj.GenerateResource.Cache
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\obj\Debug\Prosjektet.exe
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\obj\Debug\Prosjektet.xml
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\obj\Debug\Prosjektet.pdb
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\bin\Debug\MySql.Data.dll
+c:\users\sigurd\documents\visual studio 2015\Projects\Prosjektet\Prosjektet\obj\Debug\Prosjektet.vbprojResolveAssemblyReference.cache
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.exe.config
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.exe
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.xml
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.pdb
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.exe
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.pdb
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.xml
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\MySql.Data.dll
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.vbprojResolveAssemblyReference.cache
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Form1.resources
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Meny.resources
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Resources.resources
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Vareregistrering.resources
+C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.vbproj.GenerateResource.Cache
