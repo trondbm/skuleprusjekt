@@ -26,3 +26,7 @@ C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet
 C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Resources.resources
 C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Vareregistrering.resources
 C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.vbproj.GenerateResource.Cache
+C:\Users\Vegar\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.exe.config
+C:\Users\Vegar\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.exe
+C:\Users\Vegar\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.xml
+C:\Users\Vegar\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.pdb
