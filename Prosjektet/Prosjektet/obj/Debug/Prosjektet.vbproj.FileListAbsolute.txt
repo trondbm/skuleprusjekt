@@ -30,3 +30,7 @@ C:\Users\Vegar\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosje
 C:\Users\Vegar\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.exe
 C:\Users\Vegar\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.xml
 C:\Users\Vegar\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.pdb
+C:\Users\Sigurd\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.exe.config
+C:\Users\Sigurd\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.exe
+C:\Users\Sigurd\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.xml
+C:\Users\Sigurd\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.pdb
