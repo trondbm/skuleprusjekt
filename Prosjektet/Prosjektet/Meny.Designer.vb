@@ -39,9 +39,9 @@ Partial Class Meny
         '
         'Button10
         '
-        Me.Button10.BackColor = System.Drawing.Color.Fuchsia
+        Me.Button10.BackColor = System.Drawing.Color.Silver
         Me.Button10.Location = New System.Drawing.Point(146, 273)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(2)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(97, 50)
         Me.Button10.TabIndex = 30
@@ -50,9 +50,9 @@ Partial Class Meny
         '
         'Button9
         '
-        Me.Button9.BackColor = System.Drawing.Color.Fuchsia
+        Me.Button9.BackColor = System.Drawing.Color.Silver
         Me.Button9.Location = New System.Drawing.Point(377, 58)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(2)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(97, 50)
         Me.Button9.TabIndex = 29
@@ -61,9 +61,9 @@ Partial Class Meny
         '
         'Button8
         '
-        Me.Button8.BackColor = System.Drawing.Color.Fuchsia
+        Me.Button8.BackColor = System.Drawing.Color.Silver
         Me.Button8.Location = New System.Drawing.Point(260, 58)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(97, 50)
         Me.Button8.TabIndex = 28
@@ -72,9 +72,9 @@ Partial Class Meny
         '
         'Button7
         '
-        Me.Button7.BackColor = System.Drawing.Color.Fuchsia
+        Me.Button7.BackColor = System.Drawing.Color.Silver
         Me.Button7.Location = New System.Drawing.Point(146, 130)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(97, 50)
         Me.Button7.TabIndex = 27
@@ -83,9 +83,9 @@ Partial Class Meny
         '
         'Button6
         '
-        Me.Button6.BackColor = System.Drawing.Color.Fuchsia
+        Me.Button6.BackColor = System.Drawing.Color.Silver
         Me.Button6.Location = New System.Drawing.Point(33, 130)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(97, 50)
         Me.Button6.TabIndex = 26
@@ -94,9 +94,9 @@ Partial Class Meny
         '
         'Button5
         '
-        Me.Button5.BackColor = System.Drawing.Color.Fuchsia
+        Me.Button5.BackColor = System.Drawing.Color.Silver
         Me.Button5.Location = New System.Drawing.Point(377, 130)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(97, 50)
         Me.Button5.TabIndex = 25
@@ -105,9 +105,9 @@ Partial Class Meny
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.Color.Fuchsia
+        Me.Button4.BackColor = System.Drawing.Color.Silver
         Me.Button4.Location = New System.Drawing.Point(33, 58)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(97, 50)
         Me.Button4.TabIndex = 24
@@ -116,9 +116,9 @@ Partial Class Meny
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.Fuchsia
+        Me.Button3.BackColor = System.Drawing.Color.Silver
         Me.Button3.Location = New System.Drawing.Point(260, 130)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(97, 50)
         Me.Button3.TabIndex = 23
@@ -127,9 +127,9 @@ Partial Class Meny
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.Fuchsia
+        Me.Button2.BackColor = System.Drawing.Color.Silver
         Me.Button2.Location = New System.Drawing.Point(146, 58)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(97, 50)
         Me.Button2.TabIndex = 22
@@ -138,9 +138,9 @@ Partial Class Meny
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Fuchsia
+        Me.Button1.BackColor = System.Drawing.Color.Silver
         Me.Button1.Location = New System.Drawing.Point(572, 44)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(71, 35)
         Me.Button1.TabIndex = 21
@@ -161,7 +161,7 @@ Partial Class Meny
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(734, 381)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button10)
@@ -174,7 +174,7 @@ Partial Class Meny
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Meny"
         Me.Text = "Meny"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
