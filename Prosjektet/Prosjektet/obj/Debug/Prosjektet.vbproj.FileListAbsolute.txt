@@ -34,3 +34,7 @@ C:\Users\Sigurd\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosj
 C:\Users\Sigurd\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.exe
 C:\Users\Sigurd\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.xml
 C:\Users\Sigurd\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.pdb
+C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.exe.config
+C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.exe
+C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.xml
+C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.pdb
