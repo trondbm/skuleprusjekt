@@ -32,6 +32,7 @@ Partial Class Meny
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button10
@@ -144,12 +145,24 @@ Partial Class Meny
         Me.Button1.Text = "Logg ut"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.Color.Silver
+        Me.Button11.Location = New System.Drawing.Point(377, 246)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(97, 50)
+        Me.Button11.TabIndex = 31
+        Me.Button11.Text = "Statistikk"
+        Me.Button11.UseVisualStyleBackColor = False
+        '
         'Meny
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(681, 355)
+        Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
@@ -177,4 +190,5 @@ Partial Class Meny
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button11 As Button
 End Class
