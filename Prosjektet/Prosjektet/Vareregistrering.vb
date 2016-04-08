@@ -1,9 +1,15 @@
 ﻿Imports mysql.data.MySqlClient
 Public Class Vareregistrering
-    Dim tilkobling As MySqlConnection
+
+    Dim DB As New DBConnect
+
+    'Dim tilkobling As MySqlConnection
     Private Sub Vareregistrering_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        tilkobling = New MySqlConnection("Server=mysql.stud.iie.ntnu.no;Database=sigurben;Uid=sigurben;Pwd=mToZVBPO")
-        tilkobling.Open()
+        'tilkobling = New MySqlConnection()
+        'tilkobling.Open()
+
+        DB.DBConnect()
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -50,7 +56,7 @@ Public Class Vareregistrering
 
             While antall > 0
 
-                Dim sqlvare = New MySqlCommand("insert into VARE (varenavn, varegruppe, bruk, tilstand, lager, status) values (@Varenavn, @Varegruppe, @Ubrukt, @Ren, @Lager, @Tilgjengelig)", tilkobling)
+                Dim sqlvare = New MySqlCommand("insert into VARE (varenavn, varegruppe, bruk, tilstand, lager, status) values (@Varenavn, @Varegruppe, @Ubrukt, @Ren, @Lager, @Tilgjengelig)", con)
                 sqlvare.Parameters.AddWithValue("@Varenavn", varenavn)
                 sqlvare.Parameters.AddWithValue("@Varegruppe", varegruppe)
                 sqlvare.Parameters.AddWithValue("@Ubrukt", "ubrukt")
@@ -68,10 +74,11 @@ Public Class Vareregistrering
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        My.Forms.Meny.Show()
-        My.Forms.Vareregistrering.Hide()
+        Meny.Show()
+        Close()
 
-        tilkobling.Close()
+        DB.DBDisconnect()
+
     End Sub
 
 End Class

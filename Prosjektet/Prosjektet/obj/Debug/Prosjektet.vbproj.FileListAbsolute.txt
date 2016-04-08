@@ -47,3 +47,17 @@ C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet
 C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Resources.resources
 C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Vareregistrering.resources
 C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.vbproj.GenerateResource.Cache
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.exe.config
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.exe
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.xml
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.pdb
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.exe
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.pdb
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.xml
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\MySql.Data.dll
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.vbprojResolveAssemblyReference.cache
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Form1.resources
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Meny.resources
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Resources.resources
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Vareregistrering.resources
+C:\Users\Joachim Stamnes\Source\Repos\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.vbproj.GenerateResource.Cache

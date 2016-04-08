@@ -137,7 +137,7 @@ Partial Class Meny
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Silver
-        Me.Button1.Location = New System.Drawing.Point(572, 44)
+        Me.Button1.Location = New System.Drawing.Point(599, 58)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(71, 35)
@@ -175,7 +175,7 @@ Partial Class Meny
         Me.Controls.Add(Me.Button1)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Meny"
-        Me.Text = "Meny"
+        Me.Text = " "
         Me.ResumeLayout(False)
 
     End Sub
