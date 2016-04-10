@@ -16,7 +16,7 @@ Public Class Vareregistrering
 
 
         Dim varenavn = TextBox1.Text
-        Dim antall = TextBox2.Text
+        Dim antall As Integer = TextBox2.Text
         Dim varegruppe = ""
         Dim lager = ""
 
@@ -54,20 +54,22 @@ Public Class Vareregistrering
 
             MsgBox("Varenavn: " & varenavn & vbCrLf & "Antall: " & antall & vbCrLf & "Varegruppe: " & varegruppe & vbCrLf & "Lager: " & lager)
 
-            While antall > 0
 
-                Dim sqlvare = New MySqlCommand("insert into VARE (varenavn, varegruppe, bruk, tilstand, lager, status) values (@Varenavn, @Varegruppe, @Ubrukt, @Ren, @Lager, @Tilgjengelig)", con)
-                sqlvare.Parameters.AddWithValue("@Varenavn", varenavn)
+
+            Dim sqlvare = New MySqlCommand("insert into VARE (varenavn, varegruppe, bruk, tilstand, lager, status, antall) values (@Varenavn, @Varegruppe, @Ubrukt, @Ren, @Lager, @Tilgjengelig, @antall)", con)
+            sqlvare.Parameters.AddWithValue("@Varenavn", varenavn)
                 sqlvare.Parameters.AddWithValue("@Varegruppe", varegruppe)
                 sqlvare.Parameters.AddWithValue("@Ubrukt", "ubrukt")
                 sqlvare.Parameters.AddWithValue("@Ren", "ren")
                 sqlvare.Parameters.AddWithValue("@Lager", lager)
-                sqlvare.Parameters.AddWithValue("@Tilgjengelig", "tilgjengelig")
-                sqlvare.ExecuteNonQuery()
+            sqlvare.Parameters.AddWithValue("@Tilgjengelig", "tilgjengelig")
+            sqlvare.Parameters.AddWithValue("@antall", antall)
 
-                antall = antall - 1
 
-            End While
+
+
+            sqlvare.ExecuteNonQuery()
+
 
         End If
 

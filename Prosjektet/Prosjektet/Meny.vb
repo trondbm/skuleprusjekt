@@ -8,4 +8,9 @@
         Vareregistrering.Show()
         Close()
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        salg.Show()
+        Close()
+    End Sub
 End Class
