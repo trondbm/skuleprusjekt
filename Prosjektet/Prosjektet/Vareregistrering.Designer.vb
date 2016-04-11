@@ -23,7 +23,6 @@ Partial Class Vareregistrering
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -48,23 +47,12 @@ Partial Class Vareregistrering
         '
         Me.Button2.BackColor = System.Drawing.Color.Silver
         Me.Button2.Location = New System.Drawing.Point(30, 441)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(71, 35)
+        Me.Button2.Size = New System.Drawing.Size(148, 35)
         Me.Button2.TabIndex = 36
         Me.Button2.Text = "Registrer"
         Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Silver
-        Me.Button1.Location = New System.Drawing.Point(109, 441)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(71, 35)
-        Me.Button1.TabIndex = 35
-        Me.Button1.Text = "Gå tilbake"
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -79,7 +67,7 @@ Partial Class Vareregistrering
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(148, 95)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(33, 20)
         Me.TextBox2.TabIndex = 33
@@ -95,9 +83,9 @@ Partial Class Vareregistrering
         Me.GroupBox2.Controls.Add(Me.RadioButton6)
         Me.GroupBox2.Controls.Add(Me.RadioButton5)
         Me.GroupBox2.Location = New System.Drawing.Point(30, 249)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Size = New System.Drawing.Size(150, 155)
         Me.GroupBox2.TabIndex = 32
         Me.GroupBox2.TabStop = False
@@ -107,7 +95,7 @@ Partial Class Vareregistrering
         '
         Me.RadioButton9.AutoSize = True
         Me.RadioButton9.Location = New System.Drawing.Point(4, 131)
-        Me.RadioButton9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton9.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton9.Name = "RadioButton9"
         Me.RadioButton9.Size = New System.Drawing.Size(60, 17)
         Me.RadioButton9.TabIndex = 16
@@ -119,7 +107,7 @@ Partial Class Vareregistrering
         '
         Me.RadioButton8.AutoSize = True
         Me.RadioButton8.Location = New System.Drawing.Point(4, 108)
-        Me.RadioButton8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton8.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton8.Name = "RadioButton8"
         Me.RadioButton8.Size = New System.Drawing.Size(50, 17)
         Me.RadioButton8.TabIndex = 15
@@ -131,7 +119,7 @@ Partial Class Vareregistrering
         '
         Me.RadioButton7.AutoSize = True
         Me.RadioButton7.Location = New System.Drawing.Point(4, 85)
-        Me.RadioButton7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton7.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton7.Name = "RadioButton7"
         Me.RadioButton7.Size = New System.Drawing.Size(74, 17)
         Me.RadioButton7.TabIndex = 14
@@ -143,7 +131,7 @@ Partial Class Vareregistrering
         '
         Me.RadioButton4.AutoSize = True
         Me.RadioButton4.Location = New System.Drawing.Point(4, 17)
-        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(75, 17)
         Me.RadioButton4.TabIndex = 11
@@ -155,7 +143,7 @@ Partial Class Vareregistrering
         '
         Me.RadioButton6.AutoSize = True
         Me.RadioButton6.Location = New System.Drawing.Point(4, 63)
-        Me.RadioButton6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton6.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton6.Name = "RadioButton6"
         Me.RadioButton6.Size = New System.Drawing.Size(59, 17)
         Me.RadioButton6.TabIndex = 13
@@ -167,7 +155,7 @@ Partial Class Vareregistrering
         '
         Me.RadioButton5.AutoSize = True
         Me.RadioButton5.Location = New System.Drawing.Point(4, 40)
-        Me.RadioButton5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton5.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton5.Name = "RadioButton5"
         Me.RadioButton5.Size = New System.Drawing.Size(46, 17)
         Me.RadioButton5.TabIndex = 12
@@ -182,9 +170,9 @@ Partial Class Vareregistrering
         Me.GroupBox1.Controls.Add(Me.RadioButton3)
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Location = New System.Drawing.Point(28, 143)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(150, 81)
         Me.GroupBox1.TabIndex = 31
         Me.GroupBox1.TabStop = False
@@ -194,7 +182,7 @@ Partial Class Vareregistrering
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Location = New System.Drawing.Point(4, 17)
-        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(124, 17)
         Me.RadioButton1.TabIndex = 7
@@ -206,7 +194,7 @@ Partial Class Vareregistrering
         '
         Me.RadioButton3.AutoSize = True
         Me.RadioButton3.Location = New System.Drawing.Point(4, 61)
-        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(106, 17)
         Me.RadioButton3.TabIndex = 9
@@ -218,7 +206,7 @@ Partial Class Vareregistrering
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Location = New System.Drawing.Point(4, 39)
-        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(125, 17)
         Me.RadioButton2.TabIndex = 8
@@ -250,7 +238,7 @@ Partial Class Vareregistrering
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(28, 95)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(116, 20)
         Me.TextBox1.TabIndex = 28
@@ -262,7 +250,6 @@ Partial Class Vareregistrering
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(211, 492)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.GroupBox2)
@@ -270,7 +257,7 @@ Partial Class Vareregistrering
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Vareregistrering"
         Me.Text = "Vareregistrering"
         Me.GroupBox2.ResumeLayout(False)
@@ -283,7 +270,6 @@ Partial Class Vareregistrering
     End Sub
 
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents GroupBox2 As GroupBox

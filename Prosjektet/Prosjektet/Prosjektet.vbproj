@@ -85,6 +85,12 @@
       <DependentUpon>frmLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="leggtilkunde.Designer.vb">
+      <DependentUpon>leggtilkunde.vb</DependentUpon>
+    </Compile>
+    <Compile Include="leggtilkunde.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Meny.Designer.vb">
       <DependentUpon>Meny.vb</DependentUpon>
     </Compile>
@@ -122,6 +128,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leggtilkunde.resx">
+      <DependentUpon>leggtilkunde.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Meny.resx">
       <DependentUpon>Meny.vb</DependentUpon>
