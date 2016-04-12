@@ -78,6 +78,9 @@
   <ItemGroup>
     <Compile Include="Classes\Config.vb" />
     <Compile Include="Classes\DB\DBConnect.vb" />
+    <Compile Include="Classes\Theme.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -85,10 +88,28 @@
       <DependentUpon>frmLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="kurs.Designer.vb">
+      <DependentUpon>kurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kurs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leggtilansatt.Designer.vb">
+      <DependentUpon>leggtilansatt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="leggtilansatt.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="leggtilkunde.Designer.vb">
       <DependentUpon>leggtilkunde.vb</DependentUpon>
     </Compile>
     <Compile Include="leggtilkunde.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leggtilkurs.Designer.vb">
+      <DependentUpon>leggtilkurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="leggtilkurs.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Meny.Designer.vb">
@@ -129,8 +150,17 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="kurs.resx">
+      <DependentUpon>kurs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leggtilansatt.resx">
+      <DependentUpon>leggtilansatt.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="leggtilkunde.resx">
       <DependentUpon>leggtilkunde.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leggtilkurs.resx">
+      <DependentUpon>leggtilkurs.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Meny.resx">
       <DependentUpon>Meny.vb</DependentUpon>

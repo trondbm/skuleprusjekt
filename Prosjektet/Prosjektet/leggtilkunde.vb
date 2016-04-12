@@ -100,7 +100,7 @@ Public Class leggtilkunde
 
             sqlkunde.ExecuteNonQuery()
 
-            Dim sqlkundeepost = New MySqlCommand("Insert into KUNDE_EPOST (e-postK) values (@epost)", con)
+            Dim sqlkundeepost = New MySqlCommand("Insert into KUNDE_EPOST (e-postK, kundeID) values (@epost, 1)", con)
             sqlkundeepost.Parameters.AddWithValue("@epost", epost)
 
             sqlkundeepost.ExecuteNonQuery()

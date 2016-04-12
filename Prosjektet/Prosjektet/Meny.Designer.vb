@@ -38,7 +38,7 @@ Partial Class Meny
         'Button10
         '
         Me.Button10.BackColor = System.Drawing.Color.Silver
-        Me.Button10.Location = New System.Drawing.Point(146, 273)
+        Me.Button10.Location = New System.Drawing.Point(33, 294)
         Me.Button10.Margin = New System.Windows.Forms.Padding(2)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(97, 50)
@@ -148,7 +148,7 @@ Partial Class Meny
         'Button11
         '
         Me.Button11.BackColor = System.Drawing.Color.Silver
-        Me.Button11.Location = New System.Drawing.Point(377, 246)
+        Me.Button11.Location = New System.Drawing.Point(146, 294)
         Me.Button11.Margin = New System.Windows.Forms.Padding(2)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(97, 50)

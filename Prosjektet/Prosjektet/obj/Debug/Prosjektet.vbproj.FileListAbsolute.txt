@@ -13,3 +13,6 @@ C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet
 C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.pdb
 C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.leggtilkunde.resources
 C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.salg.resources
+C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.leggtilansatt.resources
+C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.kurs.resources
+C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.leggtilkurs.resources

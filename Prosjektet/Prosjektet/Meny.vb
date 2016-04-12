@@ -22,4 +22,13 @@
         leggtilkunde.Show()
 
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        leggtilansatt.Show()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        kurs.Show()
+        Close()
+    End Sub
 End Class
