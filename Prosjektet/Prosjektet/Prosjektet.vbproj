@@ -94,22 +94,22 @@
     <Compile Include="kurs.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="leggtilansatt.Designer.vb">
+    <Compile Include="leggtilforms\leggtilansatt.Designer.vb">
       <DependentUpon>leggtilansatt.vb</DependentUpon>
     </Compile>
-    <Compile Include="leggtilansatt.vb">
+    <Compile Include="leggtilforms\leggtilansatt.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="leggtilkunde.Designer.vb">
+    <Compile Include="leggtilforms\leggtilkunde.Designer.vb">
       <DependentUpon>leggtilkunde.vb</DependentUpon>
     </Compile>
-    <Compile Include="leggtilkunde.vb">
+    <Compile Include="leggtilforms\leggtilkunde.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="leggtilkurs.Designer.vb">
+    <Compile Include="leggtilforms\leggtilkurs.Designer.vb">
       <DependentUpon>leggtilkurs.vb</DependentUpon>
     </Compile>
-    <Compile Include="leggtilkurs.vb">
+    <Compile Include="leggtilforms\leggtilkurs.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Meny.Designer.vb">
@@ -139,10 +139,10 @@
     <Compile Include="salg.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vareregistrering.Designer.vb">
+    <Compile Include="leggtilforms\Vareregistrering.Designer.vb">
       <DependentUpon>Vareregistrering.vb</DependentUpon>
     </Compile>
-    <Compile Include="Vareregistrering.vb">
+    <Compile Include="leggtilforms\Vareregistrering.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -153,13 +153,13 @@
     <EmbeddedResource Include="kurs.resx">
       <DependentUpon>kurs.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="leggtilansatt.resx">
+    <EmbeddedResource Include="leggtilforms\leggtilansatt.resx">
       <DependentUpon>leggtilansatt.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="leggtilkunde.resx">
+    <EmbeddedResource Include="leggtilforms\leggtilkunde.resx">
       <DependentUpon>leggtilkunde.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="leggtilkurs.resx">
+    <EmbeddedResource Include="leggtilforms\leggtilkurs.resx">
       <DependentUpon>leggtilkurs.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Meny.resx">
@@ -174,7 +174,7 @@
     <EmbeddedResource Include="salg.resx">
       <DependentUpon>salg.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vareregistrering.resx">
+    <EmbeddedResource Include="leggtilforms\Vareregistrering.resx">
       <DependentUpon>Vareregistrering.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

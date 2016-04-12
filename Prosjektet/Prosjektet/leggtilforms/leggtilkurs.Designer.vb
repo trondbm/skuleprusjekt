@@ -31,20 +31,21 @@ Partial Class leggtilkurs
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(111, 154)
+        Me.TextBox6.Location = New System.Drawing.Point(111, 195)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(147, 20)
         Me.TextBox6.TabIndex = 42
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(111, 119)
+        Me.TextBox5.Location = New System.Drawing.Point(111, 160)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(147, 20)
         Me.TextBox5.TabIndex = 41
@@ -52,7 +53,7 @@ Partial Class leggtilkurs
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(49, 157)
+        Me.Label6.Location = New System.Drawing.Point(49, 202)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(40, 13)
         Me.Label6.TabIndex = 40
@@ -61,7 +62,7 @@ Partial Class leggtilkurs
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(49, 122)
+        Me.Label5.Location = New System.Drawing.Point(49, 163)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(55, 13)
         Me.Label5.TabIndex = 39
@@ -94,7 +95,7 @@ Partial Class leggtilkurs
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(78, 293)
+        Me.Button2.Location = New System.Drawing.Point(86, 248)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(147, 50)
         Me.Button2.TabIndex = 33
@@ -108,28 +109,28 @@ Partial Class leggtilkurs
         Me.DateTimePicker1.Size = New System.Drawing.Size(147, 20)
         Me.DateTimePicker1.TabIndex = 43
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(111, 197)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(147, 20)
-        Me.TextBox2.TabIndex = 45
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(49, 200)
+        Me.Label3.Location = New System.Drawing.Point(49, 115)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(62, 13)
         Me.Label3.TabIndex = 44
         Me.Label3.Text = "Tidslengde:"
         '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(117, 115)
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(38, 20)
+        Me.NumericUpDown1.TabIndex = 46
+        '
         'leggtilkurs
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(309, 377)
-        Me.Controls.Add(Me.TextBox2)
+        Me.ClientSize = New System.Drawing.Size(309, 316)
+        Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.TextBox6)
@@ -142,6 +143,7 @@ Partial Class leggtilkurs
         Me.Controls.Add(Me.Button2)
         Me.Name = "leggtilkurs"
         Me.Text = "leggtilkurs"
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -156,6 +158,6 @@ Partial Class leggtilkurs
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button2 As Button
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents NumericUpDown1 As NumericUpDown
 End Class

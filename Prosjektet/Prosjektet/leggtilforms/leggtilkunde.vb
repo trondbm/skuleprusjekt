@@ -11,7 +11,7 @@ Public Class leggtilkunde
 
 
     Private Sub leggtilkunde_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Me.Text = "Legg til kunde"
         db.DBConnect()
 
         Label1.Visible = False

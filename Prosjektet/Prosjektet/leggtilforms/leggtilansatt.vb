@@ -10,7 +10,7 @@ Public Class leggtilansatt
     Dim epost As String
 
     Private Sub leggtilansatt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Me.Text = "Legg til ansatt"
         db.DBConnect()
 
     End Sub
@@ -43,6 +43,8 @@ Public Class leggtilansatt
         Else
 
             tlf = TextBox6.Text
+
+            MsgBox(navn & " er lagt til som " & stilling & vbCrLf & "Epost: " & epost, MsgBoxStyle.Information, "Suksess!")
 
             Dim sqlansatt = New MySqlCommand("Insert into ANSATT (navn, stilling) values (@navn, @stilling)", con)
             sqlansatt.Parameters.AddWithValue("@navn", navn)

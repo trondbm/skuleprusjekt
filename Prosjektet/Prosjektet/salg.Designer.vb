@@ -46,7 +46,7 @@ Partial Class salg
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(114, 62)
         Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "Salg"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3

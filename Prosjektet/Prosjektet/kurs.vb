@@ -4,7 +4,7 @@ Public Class kurs
     Dim db As New DBConnect
 
     Private Sub kurs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Me.Text = "Kurs"
         db.DBConnect()
 
     End Sub
