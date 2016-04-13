@@ -94,21 +94,15 @@ Public Class leggtilkunde
             tlf = TextBox6.Text
             MsgBox("Du har nå lagt til" & navn & vbCrLf & "Tlf: " & tlf & vbCrLf & "Epost: " & epost)
 
-            Dim sqlkunde = New MySqlCommand("Insert into KUNDE (kundetype, navn) values (@kundetype, @navn)", con)
+            Dim sqlkunde = New MySqlCommand("Insert into KUNDE (kundetype, navn, epost, tlf) values (@kundetype, @navn, @epost, @tlf)", con)
             sqlkunde.Parameters.AddWithValue("@kundetype", kundetype)
             sqlkunde.Parameters.AddWithValue("@navn", navn)
+            sqlkunde.Parameters.AddWithValue("@epost", epost)
+            sqlkunde.Parameters.AddWithValue("@tlf", tlf)
 
             sqlkunde.ExecuteNonQuery()
 
-            Dim sqlkundeepost = New MySqlCommand("Insert into KUNDE_EPOST (e-postK, kundeID) values (@epost, 1)", con)
-            sqlkundeepost.Parameters.AddWithValue("@epost", epost)
 
-            sqlkundeepost.ExecuteNonQuery()
-
-            Dim sqlkundetlf = New MySqlCommand("Insert into KUNDE_TLF (tlfK) values (@tlf)", con)
-            sqlkundetlf.Parameters.AddWithValue("@tlf", tlf)
-
-            sqlkundetlf.ExecuteNonQuery()
 
 
             db.DBDisconnect()

@@ -31,33 +31,33 @@ Public Class kurs
 
 
 
-        'Create a command object with the SQL statement needed to select the first and last names
-        Dim strSQL AsString = "SELECT FirstName, LastName FROM Employees"
-      Dim objCommand AsNew OleDbCommand(strSQL, objConnection)
- 
-      'Create a data adapter and data table then fill the data table
-      Dim objDataAdapter AsNew OleDbDataAdapter(objCommand)
-      Dim objDataTable AsNew DataTable("Employees")
-      objDataAdapter.Fill(objDataTable)
+        '  'Create a command object with the SQL statement needed to select the first and last names
+        '  Dim strSQL AsString = "SELECT FirstName, LastName FROM Employees"
+        'Dim objCommand AsNew OleDbCommand(strSQL, objConnection)
+
+        ''Create a data adapter and data table then fill the data table
+        '  Dim objDataAdapter AsNew OleDbDataAdapter(objCommand)
+        ' Dim objDataTable AsNew DataTable("Employees")
+        'objDataAdapter.Fill(objDataTable)
 
         'Create connection and release resources
-        objConnection.Close()
-        objConnection.Dispose()
-        objConnection = Nothing
-        objCommand.Dispose()
-        objCommand = Nothing
-        objDataAdapter.Dispose()
-        objDataAdapter = Nothing
+        '        objConnection.Close()
+        '       objConnection.Dispose()
+        '      objConnection = Nothing
+        '     objCommand.Dispose()
+        '    objCommand = Nothing
+        '   objDataAdapter.Dispose()
+        ''  objDataAdapter = Nothing
 
         'Fill names into the listbox
-        ForEach row As DataRow In objDataTable.Rows
-           lstNames.Items.Add(row.Item("FirstName") & " " & row.Item("LastName"))
-        Next
+        ' For Each row As DataRow In objDataTable.Rows
+        '    lstNames.Items.Add(row.Item("FirstName") & " " & row.Item("LastName"))
+        'Next
 
-        'Release resources
-        objDataTable.Dispose()
-        objDataTable = Nothing
-        EndSub
+        ''Release resources
+        'objDataTable.Dispose()
+        'objDataTable = Nothing
+        'EndSub
 
 
 
