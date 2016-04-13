@@ -27,21 +27,22 @@ Partial Class Søk
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(356, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(138, 12)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(487, 327)
+        Me.DataGridView1.Size = New System.Drawing.Size(705, 327)
         Me.DataGridView1.TabIndex = 0
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Button1.Location = New System.Drawing.Point(544, 345)
+        Me.Button1.Location = New System.Drawing.Point(423, 345)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(133, 64)
         Me.Button1.TabIndex = 1
@@ -61,25 +62,35 @@ Partial Class Søk
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Ansatte", "Bestillinger", "Intruktører", "Kunder", "Kurs", "Partnere", "Tilbud", "Utleie", "Varer"})
-        Me.ComboBox1.Location = New System.Drawing.Point(52, 65)
+        Me.ComboBox1.Location = New System.Drawing.Point(11, 12)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 5
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(80, 204)
+        Me.Button3.Location = New System.Drawing.Point(243, 386)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 6
         Me.Button3.Text = "Button3"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(243, 466)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 7
+        Me.Button4.Text = "Button4"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Søk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(855, 533)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
@@ -97,4 +108,5 @@ Partial Class Søk
     Friend WithEvents Button2 As Button
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
 End Class

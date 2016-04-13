@@ -8,6 +8,13 @@ Public Class Søk
     Dim bsource As New BindingSource
     Dim tabell As String
 
+    Private Sub ResetDataGridView()
+        DataGridView1.CancelEdit()
+        DataGridView1.Columns.Clear()
+        DataGridView1.DataSource = Nothing
+
+    End Sub
+
 
     Private Sub Søk_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -27,12 +34,13 @@ Public Class Søk
         ComboBox1.ValueMember = "Key"
 
     End Sub
+
+
+
+
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
-        'DataGridView1.DataSource = dataset
-        DataGridView1.DataSource = Nothing
-        'dataset.Clear()
-
+        ResetDataGridView()
 
 
 
@@ -41,7 +49,7 @@ Public Class Søk
         Dim value As String = DirectCast(ComboBox1.SelectedItem, KeyValuePair(Of String, String)).Value
 
         Try
-            dataset.Clear()
+
             Dim query As String
             query = "Select * from " & key
             Dim sqlsøk = New MySqlCommand(query, con)
@@ -58,20 +66,25 @@ Public Class Søk
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-
-
-
-
-    End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Meny.Show()
         Close()
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+
+        Dim i As Integer
+
+        For i = 0 To DataGridView1.Columns.Count - 1
+
+            DataGridView1.Columns.Remove(DataGridView1.Columns(0))
+
+        Next
+
 
     End Sub
+
+
 End Class
