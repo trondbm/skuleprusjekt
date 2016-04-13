@@ -2,28 +2,32 @@
 Public Class kurs
 
     Dim db As New DBConnect
+    Dim dataset As New DataTable
+    Dim sda As New MySqlDataAdapter
+    Dim bsource As New BindingSource
+    Dim kurs As Integer
+
+    Public Sub load_table()
+        Try
+            Dim query As String
+            query = "Select * from KURS"
+            Dim sqlsøk = New MySqlCommand(query, con)
+            sda.SelectCommand = sqlsøk
+            sda.Fill(DataSet)
+            bsource.DataSource = DataSet
+            DataGridView1.DataSource = bsource
+            sda.Update(DataSet)
+
+        Catch ex As MySqlException
+            MsgBox("Error")
+        End Try
+    End Sub
+
 
     Private Sub kurs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Kurs"
         db.DBConnect()
-
-        '  Dim reader As MySqlDataReader
-
-        '  Try
-        '    Dim sqlkurs As String
-        '    sqlkurs = "SELECT * FROM 'VARE'"
-        '   Dim Command = New MySqlCommand(sqlkurs, con)
-        '  reader = Command.executereader
-        '   While reader.Read
-        '          Dim vname = reader.GetString("varenavn")
-        '    ListBox1.Items.Add(vname)
-        '       End While
-
-
-
-        '    Catch ex As Exception
-
-        '    End Try
+        load_table()
 
 
         Dim query As String = "SELECT varenavn FROM VARE"
@@ -31,38 +35,13 @@ Public Class kurs
 
 
 
-        '  'Create a command object with the SQL statement needed to select the first and last names
-        '  Dim strSQL AsString = "SELECT FirstName, LastName FROM Employees"
-        'Dim objCommand AsNew OleDbCommand(strSQL, objConnection)
 
-        ''Create a data adapter and data table then fill the data table
-        '  Dim objDataAdapter AsNew OleDbDataAdapter(objCommand)
-        ' Dim objDataTable AsNew DataTable("Employees")
-        'objDataAdapter.Fill(objDataTable)
-
-        'Create connection and release resources
-        '        objConnection.Close()
-        '       objConnection.Dispose()
-        '      objConnection = Nothing
-        '     objCommand.Dispose()
-        '    objCommand = Nothing
-        '   objDataAdapter.Dispose()
-        ''  objDataAdapter = Nothing
-
-        'Fill names into the listbox
-        ' For Each row As DataRow In objDataTable.Rows
-        '    lstNames.Items.Add(row.Item("FirstName") & " " & row.Item("LastName"))
-        'Next
-
-        ''Release resources
-        'objDataTable.Dispose()
-        'objDataTable = Nothing
-        'EndSub
 
 
 
 
     End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         leggtilkurs.show()
@@ -74,7 +53,35 @@ Public Class kurs
         Close()
     End Sub
 
-    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
 
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+        kurs = InputBox("Hvilken kurs_id vil du slette?")
+
+        If IsNumeric(kurs) = False Then
+            MsgBox("Du må skrive et tall!", MsgBoxStyle.Critical, "Error")
+        ElseIf kurs
+
+            Try
+                Dim sqlkurs = New MySqlCommand("DELETE FROM KURS WHERE kurs_id = " & kurs, con)
+                sqlkurs.Parameters.AddWithValue("@kurs", kurs)
+
+
+                sqlkurs.ExecuteNonQuery()
+
+            Catch ex As mysqlException
+
+            End Try
+
+
+        End If
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        DataGridView1.DataSource = dataset
+        DataGridView1.DataSource = Nothing
+        dataset.Clear()
+        load_table()
     End Sub
 End Class

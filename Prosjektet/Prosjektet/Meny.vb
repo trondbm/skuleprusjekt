@@ -34,4 +34,9 @@
         kurs.Show()
         Close()
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Søk.Show()
+        Close()
+    End Sub
 End Class

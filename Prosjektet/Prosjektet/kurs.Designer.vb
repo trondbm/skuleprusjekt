@@ -23,9 +23,12 @@ Partial Class kurs
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -36,14 +39,6 @@ Partial Class kurs
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Legg til kurs"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(243, 12)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(392, 446)
-        Me.ListBox1.TabIndex = 1
         '
         'Button2
         '
@@ -56,30 +51,61 @@ Partial Class kurs
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(12, 394)
+        Me.Button3.Location = New System.Drawing.Point(12, 222)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(130, 64)
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "Meny"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(165, 12)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(742, 274)
+        Me.DataGridView1.TabIndex = 4
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(12, 152)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(130, 64)
+        Me.Button4.TabIndex = 5
+        Me.Button4.Text = "Slett kurs"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(406, 298)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(254, 23)
+        Me.Button5.TabIndex = 6
+        Me.Button5.Text = "Refresh"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'kurs
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(647, 486)
+        Me.ClientSize = New System.Drawing.Size(919, 333)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "kurs"
         Me.Text = "kurs"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
 End Class

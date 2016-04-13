@@ -120,10 +120,15 @@ Partial Class leggtilkurs
         '
         'NumericUpDown1
         '
+        Me.NumericUpDown1.DecimalPlaces = 1
+        Me.NumericUpDown1.Increment = New Decimal(New Integer() {5, 0, 0, 65536})
         Me.NumericUpDown1.Location = New System.Drawing.Point(117, 115)
+        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {8, 0, 0, 0})
+        Me.NumericUpDown1.Minimum = New Decimal(New Integer() {5, 0, 0, 65536})
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(38, 20)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(52, 20)
         Me.NumericUpDown1.TabIndex = 46
+        Me.NumericUpDown1.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'leggtilkurs
         '
@@ -142,6 +147,7 @@ Partial Class leggtilkurs
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button2)
         Me.Name = "leggtilkurs"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "leggtilkurs"
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

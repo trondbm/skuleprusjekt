@@ -5,7 +5,7 @@ Public Class leggtilkurs
     Dim navn As String
     Dim dato As String
     Dim max As Integer
-    Dim tid As NumericUpDown
+
     Dim postnr As Integer
 
     Private Sub leggtilkurs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -14,9 +14,7 @@ Public Class leggtilkurs
 
     End Sub
 
-    Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged
 
-    End Sub
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -37,24 +35,24 @@ Public Class leggtilkurs
             navn = TextBox1.Text
             dato = DateTimePicker1.Text
             max = TextBox5.Text
-            tid = NumericUpDown1
+
             postnr = TextBox6.Text
 
-            MsgBox("Kurs lagt til!" & vbCrLf & "Navn: " & navn & vbCrLf & "Dato: " & dato & vbCrLf & "Postnr: " & postnr & " Maxantall: " & max & " timer.", MsgBoxStyle.Information, "Suksess!")
+            MsgBox("Kurs lagt til!" & vbCrLf & "Navn: " & navn & vbCrLf & "Dato: " & dato & vbCrLf & "Postnr: " & postnr & " Maxantall: " & max & NumericUpDown1.Value & " timer.", MsgBoxStyle.Information, "Suksess!")
 
             Dim sqlkurs = New MySqlCommand("Insert into KURS (dato, kursnavn, maxantall, postnr, tidslengde) values (@dato, @navn, @max, @postnr, @tid)", con)
             sqlkurs.Parameters.AddWithValue("@dato", dato)
             sqlkurs.Parameters.AddWithValue("@navn", navn)
             sqlkurs.Parameters.AddWithValue("@max", max)
             sqlkurs.Parameters.AddWithValue("@postnr", postnr)
-            sqlkurs.Parameters.AddWithValue("@tid", tid)
+            sqlkurs.Parameters.AddWithValue("@tid", NumericUpDown1.Value)
 
             sqlkurs.ExecuteNonQuery()
 
 
         End If
 
-
+        Close()
 
     End Sub
 

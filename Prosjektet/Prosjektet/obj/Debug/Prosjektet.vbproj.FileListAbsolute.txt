@@ -35,3 +35,4 @@ C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet
 C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.pdb
 C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\Prosjektet.xml
 C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\MySql.Data.dll
+C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Søk.resources

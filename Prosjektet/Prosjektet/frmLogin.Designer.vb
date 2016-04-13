@@ -89,7 +89,7 @@ Partial Class frmLogin
         Me.Button1.Text = "Avslutt"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Form1
+        'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -103,7 +103,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.Name = "Form1"
+        Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.ResumeLayout(False)

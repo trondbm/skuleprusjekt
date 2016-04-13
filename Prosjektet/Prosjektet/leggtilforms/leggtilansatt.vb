@@ -43,19 +43,19 @@ Public Class leggtilansatt
         Else
 
             tlf = TextBox6.Text
+            epost = TextBox5.Text
 
             MsgBox(navn & " er lagt til som " & stilling & vbCrLf & "Epost: " & epost, MsgBoxStyle.Information, "Suksess!")
 
-            Dim sqlansatt = New MySqlCommand("Insert into ANSATT (navn, stilling) values (@navn, @stilling)", con)
+            Dim sqlansatt = New MySqlCommand("Insert into ANSATT (navn, stilling, tlf, epost) values (@navn, @stilling, @tlf, @epost)", con)
             sqlansatt.Parameters.AddWithValue("@navn", navn)
             sqlansatt.Parameters.AddWithValue("@stilling", stilling)
+            sqlansatt.Parameters.AddWithValue("@tlf", tlf)
+            sqlansatt.Parameters.AddWithValue("@epost", epost)
 
             sqlansatt.ExecuteNonQuery()
 
-            Dim sqlansatttlf = New MySqlCommand("Insert into ANSATT_TLF (tlf) values (@tlf)", con)
-            sqlansatttlf.Parameters.AddWithValue("@tlf", tlf)
 
-            sqlansatttlf.ExecuteNonQuery()
 
 
             db.DBDisconnect()
