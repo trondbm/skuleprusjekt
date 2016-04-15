@@ -78,8 +78,15 @@
   <ItemGroup>
     <Compile Include="Classes\Config.vb" />
     <Compile Include="Classes\DB\DBConnect.vb" />
+    <Compile Include="Classes\loadtable.vb" />
     <Compile Include="Classes\Theme.vb">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="endrekurs.Designer.vb">
+      <DependentUpon>endrekurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="endrekurs.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.vb">
       <SubType>Form</SubType>
@@ -153,6 +160,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="endrekurs.resx">
+      <DependentUpon>endrekurs.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>

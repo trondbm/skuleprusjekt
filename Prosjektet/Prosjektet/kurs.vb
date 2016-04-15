@@ -5,7 +5,7 @@ Public Class kurs
     Dim dataset As New DataTable
     Dim sda As New MySqlDataAdapter
     Dim bsource As New BindingSource
-    Dim kurs As Integer
+    Dim kurs As String
 
     Public Sub load_table()
         Try
@@ -30,14 +30,6 @@ Public Class kurs
         load_table()
 
 
-        Dim query As String = "SELECT varenavn FROM VARE"
-        Dim sqlkurs As New MySqlCommand(query, con)
-
-
-
-
-
-
 
 
     End Sub
@@ -56,6 +48,9 @@ Public Class kurs
 
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+
+
 
         kurs = InputBox("Hvilken kurs_id vil du slette?")
 
@@ -77,6 +72,15 @@ Public Class kurs
 
         End If
     End Sub
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+
+
+        '  kurs = InputBox("Hvilken kurs_id vil du endre?")
+        endrekurs.Show()
+
+
+    End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         DataGridView1.DataSource = dataset
@@ -84,4 +88,8 @@ Public Class kurs
         dataset.Clear()
         load_table()
     End Sub
+
+
+
+
 End Class
