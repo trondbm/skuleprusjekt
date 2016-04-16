@@ -8,15 +8,18 @@ Public Class kurs
     Dim kurs As String
 
     Public Sub load_table()
+        DataGridView1.DataSource = dataset
+        DataGridView1.DataSource = Nothing
+        dataset.Clear()
         Try
             Dim query As String
             query = "Select * from KURS"
             Dim sqlsøk = New MySqlCommand(query, con)
             sda.SelectCommand = sqlsøk
-            sda.Fill(DataSet)
-            bsource.DataSource = DataSet
+            sda.Fill(dataset)
+            bsource.DataSource = dataset
             DataGridView1.DataSource = bsource
-            sda.Update(DataSet)
+            sda.Update(dataset)
 
         Catch ex As MySqlException
             MsgBox("Error")
@@ -37,7 +40,7 @@ Public Class kurs
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         leggtilkurs.show()
-
+        AddHandler leggtilkurs.FormClosed, AddressOf load_table
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -69,13 +72,13 @@ Public Class kurs
 
             End Try
 
-
+            load_table()
         End If
     End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
 
-
+        AddHandler endrekurs.FormClosed, AddressOf load_table
         '  kurs = InputBox("Hvilken kurs_id vil du endre?")
         endrekurs.Show()
 

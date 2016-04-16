@@ -9,9 +9,11 @@ Public Class Søk
     Dim tabell As String
 
     Private Sub ResetDataGridView()
-        DataGridView1.CancelEdit()
-        DataGridView1.Columns.Clear()
+        DataGridView1.DataSource = dataset
+        dataset.Columns.Clear()
+
         DataGridView1.DataSource = Nothing
+        dataset.Clear()
 
     End Sub
 

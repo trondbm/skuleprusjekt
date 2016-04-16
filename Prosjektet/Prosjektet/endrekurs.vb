@@ -146,7 +146,7 @@ Public Class endrekurs
 
 
 
-
+        Me.Close()
 
 
     End Sub
