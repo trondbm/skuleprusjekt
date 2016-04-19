@@ -13,6 +13,9 @@ Public Class endrekurs
 
     Private Sub endrekurs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Endre kurs"
+
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         db.DBConnect()
 
     End Sub

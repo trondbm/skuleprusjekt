@@ -9,6 +9,9 @@ Public Class leggtilbruker
 
     Private Sub leggtilbruker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         db.DBConnect()
+
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

@@ -9,6 +9,8 @@ Public Class leggtilkurs
     Dim postnr As Integer
 
     Private Sub leggtilkurs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Text = "Legg til kurs"
         db.DBConnect()
 

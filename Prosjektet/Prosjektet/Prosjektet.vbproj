@@ -76,15 +76,20 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Brukere.Designer.vb">
+    <Compile Include="Mainforms\lager.Designer.vb">
+      <DependentUpon>lager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mainforms\lager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainforms\Brukere.Designer.vb">
       <DependentUpon>Brukere.vb</DependentUpon>
     </Compile>
-    <Compile Include="Brukere.vb">
+    <Compile Include="Mainforms\Brukere.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Classes\Config.vb" />
     <Compile Include="Classes\DB\DBConnect.vb" />
-    <Compile Include="Classes\loadtable.vb" />
     <Compile Include="Classes\Theme.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -100,17 +105,17 @@
     <Compile Include="endrekurs.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.vb">
+    <Compile Include="Mainforms\frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.vb">
+    <Compile Include="Mainforms\frmLogin.Designer.vb">
       <DependentUpon>frmLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="kurs.Designer.vb">
+    <Compile Include="Mainforms\kurs.Designer.vb">
       <DependentUpon>kurs.vb</DependentUpon>
     </Compile>
-    <Compile Include="kurs.vb">
+    <Compile Include="Mainforms\kurs.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="leggtilforms\leggtilbruker.Designer.vb">
@@ -137,10 +142,10 @@
     <Compile Include="leggtilforms\leggtilkurs.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Meny.Designer.vb">
+    <Compile Include="Mainforms\Meny.Designer.vb">
       <DependentUpon>Meny.vb</DependentUpon>
     </Compile>
-    <Compile Include="Meny.vb">
+    <Compile Include="Mainforms\Meny.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -158,10 +163,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="salg.Designer.vb">
+    <Compile Include="Mainforms\salg.Designer.vb">
       <DependentUpon>salg.vb</DependentUpon>
     </Compile>
-    <Compile Include="salg.vb">
+    <Compile Include="Mainforms\salg.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="leggtilforms\Vareregistrering.Designer.vb">
@@ -170,15 +175,21 @@
     <Compile Include="leggtilforms\Vareregistrering.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Søk.Designer.vb">
+    <Compile Include="Mainforms\Søk.Designer.vb">
       <DependentUpon>Søk.vb</DependentUpon>
     </Compile>
-    <Compile Include="Søk.vb">
+    <Compile Include="Mainforms\Søk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainforms\utleie.Designer.vb">
+      <DependentUpon>utleie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mainforms\utleie.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Brukere.resx">
+    <EmbeddedResource Include="Mainforms\Brukere.resx">
       <DependentUpon>Brukere.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="endrebruker.resx">
@@ -187,10 +198,10 @@
     <EmbeddedResource Include="endrekurs.resx">
       <DependentUpon>endrekurs.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="Mainforms\frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="kurs.resx">
+    <EmbeddedResource Include="Mainforms\kurs.resx">
       <DependentUpon>kurs.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="leggtilforms\leggtilansatt.resx">
@@ -205,7 +216,10 @@
     <EmbeddedResource Include="leggtilforms\leggtilkurs.resx">
       <DependentUpon>leggtilkurs.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Meny.resx">
+    <EmbeddedResource Include="Mainforms\lager.resx">
+      <DependentUpon>lager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainforms\Meny.resx">
       <DependentUpon>Meny.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -214,14 +228,17 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="salg.resx">
+    <EmbeddedResource Include="Mainforms\salg.resx">
       <DependentUpon>salg.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="leggtilforms\Vareregistrering.resx">
       <DependentUpon>Vareregistrering.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Søk.resx">
+    <EmbeddedResource Include="Mainforms\Søk.resx">
       <DependentUpon>Søk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainforms\utleie.resx">
+      <DependentUpon>utleie.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

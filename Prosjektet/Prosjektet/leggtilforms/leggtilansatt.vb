@@ -12,7 +12,8 @@ Public Class leggtilansatt
     Private Sub leggtilansatt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Legg til ansatt"
         db.DBConnect()
-
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

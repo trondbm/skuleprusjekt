@@ -12,7 +12,8 @@ Public Class Vareregistrering
 
 
     Private Sub Vareregistrering_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
 
         DB.DBConnect()
 

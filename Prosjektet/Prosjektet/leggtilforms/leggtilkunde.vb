@@ -11,6 +11,8 @@ Public Class leggtilkunde
 
 
     Private Sub leggtilkunde_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Text = "Legg til kunde"
         db.DBConnect()
 

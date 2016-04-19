@@ -12,6 +12,9 @@ Public Class endrebruker
 
     Private Sub endrebruker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Endre bruker"
+
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         db.DBConnect()
 
     End Sub

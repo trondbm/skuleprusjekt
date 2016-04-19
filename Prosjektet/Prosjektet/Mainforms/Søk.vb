@@ -20,6 +20,8 @@ Public Class Søk
 
     Private Sub Søk_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         db.DBConnect()
 
         Dim comboSource As New Dictionary(Of String, String)()

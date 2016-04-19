@@ -5,6 +5,8 @@ Public Class salg
     Private Sub salg_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Salg"
 
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         db.DBConnect()
 
     End Sub

@@ -1,11 +1,11 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class Brukere
+Public Class kurs
 
     Dim db As New DBConnect
     Dim dataset As New DataTable
     Dim sda As New MySqlDataAdapter
     Dim bsource As New BindingSource
-    Dim brukere As String
+    Dim kurs As String
 
     Public Sub load_table()
         DataGridView1.DataSource = dataset
@@ -13,7 +13,7 @@ Public Class Brukere
         dataset.Clear()
         Try
             Dim query As String
-            query = "Select * from BRUKERE"
+            query = "Select * from KURS"
             Dim sqlsøk = New MySqlCommand(query, con)
             sda.SelectCommand = sqlsøk
             sda.Fill(dataset)
@@ -27,8 +27,10 @@ Public Class Brukere
     End Sub
 
 
-    Private Sub Brukere_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Text = "Brukere"
+    Private Sub kurs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.Text = "Kurs"
         db.DBConnect()
         load_table()
 
@@ -39,8 +41,8 @@ Public Class Brukere
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        leggtilbruker.Show()
-        AddHandler leggtilbruker.FormClosed, AddressOf load_table
+        leggtilkurs.show()
+        AddHandler leggtilkurs.FormClosed, AddressOf load_table
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -55,28 +57,35 @@ Public Class Brukere
 
 
 
-        brukere = InputBox("Hvilken bruker vil du slette?")
+        kurs = InputBox("Hvilken kurs_id vil du slette?", "Slett kurs")
+
+        If kurs = "" Then
+            load_table()
+        ElseIf IsNumeric(kurs) = False Then
+            MsgBox("Du må skrive et tall!", MsgBoxStyle.Critical, "Error")
+        ElseIf kurs
+
+            Try
+                Dim sqlkurs = New MySqlCommand("DELETE FROM KURS WHERE kurs_id = " & kurs, con)
 
 
-        Try
-            Dim sqlslettebruker = New MySqlCommand("DELETE FROM `BRUKERE` WHERE `Brukernavn` = '" & brukere & "'", con)
 
+                sqlkurs.ExecuteNonQuery()
 
-            sqlslettebruker.ExecuteNonQuery()
+            Catch ex As MySqlException
 
-        Catch ex As MySqlException
-            MsgBox("Fant ikke bruker", MsgBoxStyle.Critical, "Error")
-        End Try
+            End Try
 
             load_table()
 
+        End If
     End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
 
-        AddHandler endrebruker.FormClosed, AddressOf load_table
+        AddHandler endrekurs.FormClosed, AddressOf load_table
         '  kurs = InputBox("Hvilken kurs_id vil du endre?")
-        endrebruker.Show()
+        endrekurs.Show()
 
 
     End Sub
