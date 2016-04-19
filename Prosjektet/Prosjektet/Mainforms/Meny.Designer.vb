@@ -251,8 +251,6 @@ Partial Class Meny
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(737, 370)
         Me.Controls.Add(Me.Button13)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Label3)
@@ -268,6 +266,8 @@ Partial Class Meny
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Meny"
