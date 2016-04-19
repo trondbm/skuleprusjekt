@@ -3,6 +3,9 @@
 
     Private Sub Meny_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Meny"
+
+
+
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         frmLogin.Show()
@@ -37,6 +40,11 @@
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Søk.Show()
+        Close()
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Brukere.show()
         Close()
     End Sub
 End Class

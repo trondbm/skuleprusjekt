@@ -37,3 +37,6 @@ C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet
 C:\Users\Godter\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\bin\Debug\MySql.Data.dll
 C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Søk.resources
 C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.endrekurs.resources
+C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.Brukere.resources
+C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.leggtilbruker.resources
+C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.endrebruker.resources
