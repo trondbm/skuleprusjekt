@@ -8,18 +8,18 @@ Public Class salg
         FormBorderStyle = FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         db.DBConnect()
-
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-
         leggtilkunde.Show()
-
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Meny.Show()
         Close()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        leggtilsalg.Show()
     End Sub
 End Class

@@ -76,6 +76,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="leggtilforms\leggtilsalg.Designer.vb">
+      <DependentUpon>leggtilsalg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="leggtilforms\leggtilsalg.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Mainforms\lager.Designer.vb">
       <DependentUpon>lager.vb</DependentUpon>
     </Compile>
@@ -189,6 +195,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="leggtilforms\leggtilsalg.resx">
+      <DependentUpon>leggtilsalg.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mainforms\Brukere.resx">
       <DependentUpon>Brukere.vb</DependentUpon>
     </EmbeddedResource>
