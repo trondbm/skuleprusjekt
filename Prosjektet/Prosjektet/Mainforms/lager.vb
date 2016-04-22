@@ -65,7 +65,7 @@ Public Class lager
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         Vareregistrering.Show()
-        AddHandler leggtilkurs.FormClosed, AddressOf load_table
+        AddHandler Vareregistrering.FormClosed, AddressOf load_table
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -104,11 +104,9 @@ Public Class lager
         End If
     End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        endrelager.Show()
 
-
-        AddHandler endrekurs.FormClosed, AddressOf load_table
-        '  kurs = InputBox("Hvilken kurs_id vil du endre?")
-        '  endrevare.Show()
+        AddHandler endrelager.FormClosed, AddressOf load_table
 
 
     End Sub

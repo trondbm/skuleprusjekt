@@ -8,6 +8,7 @@ Public Class Vareregistrering
     Dim antall As Integer
     Dim varegruppe As String = ""
     Dim lager As String = ""
+    Dim pris As Double
 
 
 
@@ -21,7 +22,7 @@ Public Class Vareregistrering
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-
+        TextBox3.Text = TextBox3.Text.Replace(".", ",")
 
 
         If RadioButton1.Checked = True Then
@@ -54,16 +55,21 @@ Public Class Vareregistrering
             MsgBox("Du må velge en varegruppe!", MsgBoxStyle.Critical, "Error")
         ElseIf lager = "" Then
             MsgBox("Du må velge et lager!", MsgBoxStyle.Critical, "Error")
+        ElseIf TextBox3.Text = "" Then
+            MsgBox("Du må velge pris!", MsgBoxStyle.Critical, "Error")
+        ElseIf IsNumeric(TextBox3.text) = False Then
+            MsgBox("Prisen må være et tall!", MsgBoxStyle.Critical, "Error")
         Else
 
             varenavn = TextBox1.Text
             antall = TextBox2.Text
+            pris = TextBox3.Text
 
             MsgBox("Varenavn: " & varenavn & vbCrLf & "Antall: " & antall & vbCrLf & "Varegruppe: " & varegruppe & vbCrLf & "Lager: " & lager, MsgBoxStyle.Information, "Suksess!")
 
 
 
-            Dim sqlvare = New MySqlCommand("insert into VARE (varenavn, varegruppe, bruk, tilstand, lager, status, antall) values (@Varenavn, @Varegruppe, @Ubrukt, @Ren, @Lager, @Tilgjengelig, @antall)", con)
+            Dim sqlvare = New MySqlCommand("insert into VARE (varenavn, varegruppe, bruk, tilstand, lager, status, antall, pris) values (@Varenavn, @Varegruppe, @Ubrukt, @Ren, @Lager, @Tilgjengelig, @antall, @pris)", con)
             sqlvare.Parameters.AddWithValue("@Varenavn", varenavn)
                 sqlvare.Parameters.AddWithValue("@Varegruppe", varegruppe)
                 sqlvare.Parameters.AddWithValue("@Ubrukt", "ubrukt")
@@ -71,7 +77,7 @@ Public Class Vareregistrering
                 sqlvare.Parameters.AddWithValue("@Lager", lager)
             sqlvare.Parameters.AddWithValue("@Tilgjengelig", "tilgjengelig")
             sqlvare.Parameters.AddWithValue("@antall", antall)
-
+            sqlvare.Parameters.AddWithValue("@pris", pris)
 
 
 

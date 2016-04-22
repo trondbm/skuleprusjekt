@@ -105,69 +105,85 @@ Public Class leggtilsalg
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim kundeid As String
-        Dim ansattid As String
-        Dim tall As Integer
-        Dim antall As Integer = TextBox5.Text
 
-        Dim finalpris As Double = Label7.Text * antall
+        If ComboBox2.SelectedIndex = -1 Then
+            MsgBox("Du må velge selger!", MsgBoxStyle.Critical, "Error")
+        ElseIf ComboBox3.SelectedIndex = -1 Then
+            MsgBox("Du må velge kunde!", MsgBoxStyle.Critical, "Error")
+        ElseIf ComboBox1.SelectedIndex = -1 Then
+            MsgBox("Du må velge vare!", MsgBoxStyle.Critical, "Error")
+        ElseIf textbox5.text = "" Then
+            MsgBox("Du må velge antall!", MsgBoxStyle.Critical, "Error")
+        ElseIf IsNumeric(TextBox5.text) = False Then
+            MsgBox("Antall må være et nummer!", MsgBoxStyle.Critical, "Error")
+        Else
+            Dim kundeid As String
+            Dim ansattid As String
+            Dim tall As Integer
+            Dim antall As Integer = TextBox5.Text
 
-        Dim ansid As New MySqlCommand("SELECT ansatt_id FROM ANSATT where navn = '" & ComboBox2.SelectedItem & "'", con)
+            Dim finalpris As Double = Label7.Text * antall
 
-        Dim kunid As New MySqlCommand("SELECT kundeID FROM KUNDE where navn = '" & ComboBox3.SelectedItem & "'", con)
+            Dim ansid As New MySqlCommand("SELECT ansatt_id FROM ANSATT where navn = '" & ComboBox2.SelectedItem & "'", con)
 
-        Dim antv As New MySqlCommand("SELECT antall FROM VARE where varenavn = '" & ComboBox1.SelectedItem & "'", con)
+            Dim kunid As New MySqlCommand("SELECT kundeID FROM KUNDE where navn = '" & ComboBox3.SelectedItem & "'", con)
 
-        con.Open()
+            Dim antv As New MySqlCommand("SELECT antall FROM VARE where varenavn = '" & ComboBox1.SelectedItem & "'", con)
+
+            con.Open()
 
 
-        'leser ansattid
-        Dim rd As MySqlDataReader = ansid.ExecuteReader()
-        rd.Read()
+            'leser ansattid
+            Dim rd As MySqlDataReader = ansid.ExecuteReader()
+            rd.Read()
 
             ansattid = rd("ansatt_id")
 
 
-        rd.Close()
+            rd.Close()
 
 
-        'leser antallvare
-        Dim rdvare As MySqlDataReader = antv.ExecuteReader()
-        rdvare.Read()
+            'leser antallvare
+            Dim rdvare As MySqlDataReader = antv.ExecuteReader()
+            rdvare.Read()
 
-        tall = rdvare("antall")
-
-
-        rdvare.Close()
+            tall = rdvare("antall")
 
 
-        'leser kundeid
-        Dim rde As MySqlDataReader = kunid.ExecuteReader()
-        rde.Read()
+            rdvare.Close()
+
+
+            'leser kundeid
+            Dim rde As MySqlDataReader = kunid.ExecuteReader()
+            rde.Read()
 
             kundeid = rde("kundeID")
 
-        rde.Close()
+            rde.Close()
 
 
 
-        Dim antvare As Integer = tall - antall
+            Dim antvare As Integer = tall - antall
 
 
-        Try
+            Try
 
-            Dim sqlsalg As New MySqlCommand("INSERT into SALG (salgansatt_id, salgkunde_id, salgdato, salgvare, salgantall, salgpris) values ('" & ansattid & "', '" & kundeid & "', '" & DateTimePicker1.Value & "', '" & ComboBox1.SelectedItem & "', '" & TextBox5.Text & "', '" & finalpris & "')", con)
-            sqlsalg.ExecuteNonQuery()
+                Dim sqlsalg As New MySqlCommand("INSERT into SALG (salgansatt_id, salgkunde_id, salgdato, salgvare, salgantall, salgpris) values ('" & ansattid & "', '" & kundeid & "', '" & DateTimePicker1.Value & "', '" & ComboBox1.SelectedItem & "', '" & TextBox5.Text & "', '" & finalpris & "')", con)
+                sqlsalg.ExecuteNonQuery()
 
-            Dim sqlvarecng As New MySqlCommand("UPDATE  VARE SET `antall` =  '" & antvare & "' WHERE  `VARE`.`varenavn` = '" & ComboBox1.SelectedItem & "'", con)
-            sqlvarecng.ExecuteNonQuery()
+                Dim sqlvarecng As New MySqlCommand("UPDATE  VARE SET `antall` =  '" & antvare & "' WHERE  `VARE`.`varenavn` = '" & ComboBox1.SelectedItem & "'", con)
+                sqlvarecng.ExecuteNonQuery()
 
-            con.Close()
-            Close()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-            con.Close()
-        End Try
+                con.Close()
+                Close()
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+                con.Close()
+            End Try
+
+        End If
+
+
 
 
     End Sub

@@ -76,6 +76,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="endrelager.Designer.vb">
+      <DependentUpon>endrelager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="endrelager.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="endresalg.Designer.vb">
       <DependentUpon>endresalg.vb</DependentUpon>
     </Compile>
@@ -201,6 +207,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="endrelager.resx">
+      <DependentUpon>endrelager.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="endresalg.resx">
       <DependentUpon>endresalg.vb</DependentUpon>
     </EmbeddedResource>

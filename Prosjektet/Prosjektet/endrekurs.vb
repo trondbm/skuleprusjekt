@@ -119,33 +119,6 @@ Public Class endrekurs
         End If
 
 
-        '    Try
-        '        Dim sqlekurs = New MySqlCommand("UPDATE KURS SET kursnavn='" & ekursnavn & "' where kurs_id='" & kurs & "'", con)
-        '        Dim sqledkurs = New MySqlCommand("UPDATE KURS SET dato='" & edato & "' where kurs_id='" & kurs & "'", con)
-        '        Dim sqletkurs = New MySqlCommand("UPDATE KURS SET tidslengde='" & etidslengde & "' where kurs_id='" & kurs & "'", con)
-        '        Dim sqlemkurs = New MySqlCommand("UPDATE KURS SET maxantall='" & emaxantall & "' where kurs_id='" & kurs & "'", con)
-        '        Dim sqlepkurs = New MySqlCommand("UPDATE KURS SET postnr='" & epostnr & "' where kurs_id='" & kurs & "'", con)
-
-        '        'sqlekurs.Parameters.AddWithValue("@kursnavn", ekursnavn)
-        '        'sqlekurs.Parameters.AddWithValue("@kurs", edato)
-        '        'sqlekurs.Parameters.AddWithValue("@kurs", etidslengde)
-        '        'sqlekurs.Parameters.AddWithValue("@kurs", emaxantall)
-        '        'sqlekurs.Parameters.AddWithValue("@kurs", epostnr)
-
-
-
-        '        sqlekurs.ExecuteNonQuery()
-        '        sqledkurs.ExecuteNonQuery()
-        '        sqletkurs.ExecuteNonQuery()
-        '        sqlemkurs.ExecuteNonQuery()
-        '        sqlepkurs.ExecuteNonQuery()
-
-        '        MsgBox("Kurs med id nummer " & kurs & " er endret.", MsgBoxStyle.Information, "Suksess!")
-
-
-        '    Catch ex As MySqlException
-        '        MsgBox("Noe gikk galt! lol", MsgBoxStyle.Critical, "Error!")
-        '    End Try
 
 
 

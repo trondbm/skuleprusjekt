@@ -240,7 +240,7 @@ Public Class endresalg
 
         Dim antvare As Integer = organtvare - antall
 
-        MsgBox(organtvare)
+
         Try
 
 
