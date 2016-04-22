@@ -76,6 +76,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="endresalg.Designer.vb">
+      <DependentUpon>endresalg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="endresalg.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="leggtilforms\leggtilsalg.Designer.vb">
       <DependentUpon>leggtilsalg.vb</DependentUpon>
     </Compile>
@@ -195,6 +201,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="endresalg.resx">
+      <DependentUpon>endresalg.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="leggtilforms\leggtilsalg.resx">
       <DependentUpon>leggtilsalg.vb</DependentUpon>
     </EmbeddedResource>

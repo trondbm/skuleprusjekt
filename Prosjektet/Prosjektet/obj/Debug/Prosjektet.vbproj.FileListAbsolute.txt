@@ -43,3 +43,4 @@ C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet
 C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.lager.resources
 C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.vbprojResolveAssemblyReference.cache
 C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.leggtilsalg.resources
+C:\Users\fanfan\Documents\GitHubVisualStudio\skuleprusjekt\Prosjektet\Prosjektet\obj\Debug\Prosjektet.endresalg.resources
