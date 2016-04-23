@@ -76,22 +76,34 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="endrelager.Designer.vb">
+    <Compile Include="endreform\endrelager.Designer.vb">
       <DependentUpon>endrelager.vb</DependentUpon>
     </Compile>
-    <Compile Include="endrelager.vb">
+    <Compile Include="endreform\endrelager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="endresalg.Designer.vb">
+    <Compile Include="endreform\endresalg.Designer.vb">
       <DependentUpon>endresalg.vb</DependentUpon>
     </Compile>
-    <Compile Include="endresalg.vb">
+    <Compile Include="endreform\endresalg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="endreform\endreutleie.Designer.vb">
+      <DependentUpon>endreutleie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="endreform\endreutleie.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="leggtilforms\leggtilsalg.Designer.vb">
       <DependentUpon>leggtilsalg.vb</DependentUpon>
     </Compile>
     <Compile Include="leggtilforms\leggtilsalg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leggtilforms\leggtilutleie.Designer.vb">
+      <DependentUpon>leggtilutleie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="leggtilforms\leggtilutleie.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Mainforms\lager.Designer.vb">
@@ -111,16 +123,16 @@
     <Compile Include="Classes\Theme.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="endrebruker.Designer.vb">
+    <Compile Include="endreform\endrebruker.Designer.vb">
       <DependentUpon>endrebruker.vb</DependentUpon>
     </Compile>
-    <Compile Include="endrebruker.vb">
+    <Compile Include="endreform\endrebruker.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="endrekurs.Designer.vb">
+    <Compile Include="endreform\endrekurs.Designer.vb">
       <DependentUpon>endrekurs.vb</DependentUpon>
     </Compile>
-    <Compile Include="endrekurs.vb">
+    <Compile Include="endreform\endrekurs.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Mainforms\frmLogin.vb">
@@ -207,22 +219,28 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="endrelager.resx">
+    <EmbeddedResource Include="endreform\endrelager.resx">
       <DependentUpon>endrelager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="endresalg.resx">
+    <EmbeddedResource Include="endreform\endresalg.resx">
       <DependentUpon>endresalg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="endreform\endreutleie.resx">
+      <DependentUpon>endreutleie.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="leggtilforms\leggtilsalg.resx">
       <DependentUpon>leggtilsalg.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="leggtilforms\leggtilutleie.resx">
+      <DependentUpon>leggtilutleie.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mainforms\Brukere.resx">
       <DependentUpon>Brukere.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="endrebruker.resx">
+    <EmbeddedResource Include="endreform\endrebruker.resx">
       <DependentUpon>endrebruker.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="endrekurs.resx">
+    <EmbeddedResource Include="endreform\endrekurs.resx">
       <DependentUpon>endrekurs.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mainforms\frmLogin.resx">
