@@ -18,18 +18,14 @@
 
         If typer = "selger" Then
             Button10.Visible = False
-            Button3.Visible = False
             Button5.Visible = False
-            Button9.Visible = False
             PictureBox2.Visible = True
             Label2.Visible = True
             Button12.Visible = False
             Me.Size = New System.Drawing.Size(583, 409)
         ElseIf typer = "lager"
             Button10.Visible = False
-            Button3.Visible = False
             Button5.Visible = False
-            Button9.Visible = False
             Button7.Visible = False
             Button2.Visible = False
             Button6.Visible = False
