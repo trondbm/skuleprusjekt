@@ -103,6 +103,11 @@ Public Class endreutleie
 
 
         Try
+
+
+
+
+
             con.Open()
             Dim rd As MySqlDataReader = prs.ExecuteReader()
             rd.Read()
@@ -110,11 +115,11 @@ Public Class endreutleie
 
             DateTimePicker3.Value = rd("startdato")
             DateTimePicker2.Value = rd("sluttdato")
-            ComboBox5.SelectedItem = rd("utleievare")
-            TextBox5.Text = rd("salgantall")
+            ComboBox5.SelectedItem = rd("utleie_vare")
+            TextBox5.Text = rd("utleie_antall")
 
-            kundeid = rd("salgkunde_id")
-            ansattid = rd("salgansatt_id")
+            kundeid = rd("kundeID")
+            ansattid = rd("ansatt_id")
 
 
             rd.Close()
@@ -122,19 +127,20 @@ Public Class endreutleie
 
 
             'pris fra vare
-            Dim pris As New MySqlCommand("SELECT pris FROM VARE where varenavn = '" & ComboBox5.SelectedItem & "'", con)
+            Dim pris As New MySqlCommand("SELECT utleiepris FROM VARE where varenavn = '" & ComboBox5.SelectedItem & "'", con)
 
 
 
             Dim rdpris As MySqlDataReader = pris.ExecuteReader()
             rdpris.Read()
 
-            Label8.Text = rdpris("pris")
+            Label10.Text = rdpris("utleiepris")
 
             rdpris.Close()
 
 
-
+            ' noe feil med kundeID og ansatt_id er lik noe dim... veit ikke hva som er feil... fungerer med hardkoding men ikke en dim... leste kundeid 1 som ikke finns... sjekke leggtilutleie.. kundeid blir lagt til feil
+            ' alt greit kopier fra endresalg
 
 
             Dim ansattnavn As New MySqlCommand("SELECT navn from ANSATT where ansatt_id = '" & ansattid & "'", con)
@@ -164,36 +170,41 @@ Public Class endreutleie
             rdk.Close()
             con.Close()
 
-
         Catch ex As System.Exception
             MessageBox.Show(ex.Message)
+        con.Close()
         End Try
+
 
 
 
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        con.Open()
         Dim kundeid As String
         Dim ansattid As String
         Dim tall As Integer
-        Dim antall As Integer = TextBox4.Text
-        Dim salgtall As Integer
+        Dim antall As Integer = TextBox5.Text
+        Dim utleieantall As Integer
+        Dim fradato As Date = DateTimePicker3.Value.ToString
+        Dim tildato As Date = DateTimePicker2.Value.ToString
+
+        Dim antalldager As Int32 = tildato.Subtract(fradato).Days + 1
 
 
 
-        Dim finalpris As Double = Label8.Text * antall
+        Dim finalpris As Double = Label10.Text * antall * antalldager
 
         Dim ansid As New MySqlCommand("SELECT ansatt_id FROM ANSATT where navn = '" & ComboBox3.SelectedItem & "'", con)
 
         Dim kunid As New MySqlCommand("SELECT kundeID FROM KUNDE where navn = '" & ComboBox4.SelectedItem & "'", con)
 
-        Dim antv As New MySqlCommand("SELECT antall FROM VARE where varenavn = '" & ComboBox2.SelectedItem & "'", con)
+        Dim antv As New MySqlCommand("SELECT antall FROM VARE where varenavn = '" & ComboBox5.SelectedItem & "'", con)
 
-        Dim antsv As New MySqlCommand("SELECT salgantall FROM SALG where salg_id = '" & ComboBox1.SelectedItem & "'", con)
+        Dim antsv As New MySqlCommand("SELECT utleie_antall FROM UTLEIE where utleieID = '" & ComboBox1.SelectedItem & "'", con)
 
-        con.Open()
+
 
 
         'leser ansattid
@@ -228,38 +239,36 @@ Public Class endreutleie
         Dim rdantvare As MySqlDataReader = antsv.ExecuteReader()
         rdantvare.Read()
 
-        salgtall = rdantvare("salgantall")
+        utleieantall = rdantvare("utleie_antall")
 
 
         rdantvare.Close()
-        Dim organtvare As Integer = tall + salgtall
 
 
-
-
-
+        Dim organtvare As Integer = tall + utleieantall
 
         Dim antvare As Integer = organtvare - antall
 
+        If antvare < 0 Then
+            MsgBox("Det er ikke nok varer til å fullføre endringen")
+        Else
 
-        Try
+            Try
 
+                Dim sqlsalg As New MySqlCommand("UPDATE UTLEIE SET startdato='" & DateTimePicker3.Value & "', sluttdato='" & DateTimePicker2.Value & "', utleie_vare='" & ComboBox5.SelectedItem & "', utleie_antall='" & TextBox5.Text & "', utleie_pris='" & Label10.Text & "', kundeid='" & kundeid & "', ansatt_id='" & ansattid & "' where utleieid=" & ComboBox1.SelectedItem, con)
+                sqlsalg.ExecuteNonQuery()
 
+                Dim sqlvarecng As New MySqlCommand("UPDATE  VARE SET `antall` =  '" & antvare & "' WHERE  `VARE`.`varenavn` = '" & ComboBox5.SelectedItem & "'", con)
+                sqlvarecng.ExecuteNonQuery()
 
-            Dim sqlsalg As New MySqlCommand("UPDATE SALG SET salgansatt_id='" & ansattid & "', salgkunde_id='" & kundeid & "', salgdato='" & DateTimePicker1.Value & "', salgvare='" & ComboBox2.SelectedItem & "', salgantall='" & TextBox4.Text & "', salgpris='" & finalpris & "' where salg_id=" & ComboBox1.SelectedItem, con)
-            sqlsalg.ExecuteNonQuery()
+                con.Close()
+                Close()
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+                con.Close()
+            End Try
 
-            Dim sqlvarecng As New MySqlCommand("UPDATE  VARE SET `antall` =  '" & antvare & "' WHERE  `VARE`.`varenavn` = '" & ComboBox2.SelectedItem & "'", con)
-            sqlvarecng.ExecuteNonQuery()
-
-            con.Close()
-            Close()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-            con.Close()
-        End Try
-
-
+        End If
 
     End Sub
 

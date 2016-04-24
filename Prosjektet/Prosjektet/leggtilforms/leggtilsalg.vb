@@ -117,6 +117,7 @@ Public Class leggtilsalg
         ElseIf IsNumeric(TextBox5.text) = False Then
             MsgBox("Antall må være et nummer!", MsgBoxStyle.Critical, "Error")
         Else
+            con.Open()
             Dim kundeid As String
             Dim ansattid As String
             Dim tall As Integer
@@ -130,7 +131,7 @@ Public Class leggtilsalg
 
             Dim antv As New MySqlCommand("SELECT antall FROM VARE where varenavn = '" & ComboBox1.SelectedItem & "'", con)
 
-            con.Open()
+
 
 
             'leser ansattid
@@ -165,22 +166,25 @@ Public Class leggtilsalg
 
             Dim antvare As Integer = tall - antall
 
+            If antvare < 0 Then
+                MsgBox("Det er ikke nok varer til å fullføre endringen")
+            Else
+                Try
 
-            Try
+                    Dim sqlsalg As New MySqlCommand("INSERT into SALG (salgansatt_id, salgkunde_id, salgdato, salgvare, salgantall, salgpris) values ('" & ansattid & "', '" & kundeid & "', '" & DateTimePicker1.Value & "', '" & ComboBox1.SelectedItem & "', '" & TextBox5.Text & "', '" & finalpris & "')", con)
+                    sqlsalg.ExecuteNonQuery()
 
-                Dim sqlsalg As New MySqlCommand("INSERT into SALG (salgansatt_id, salgkunde_id, salgdato, salgvare, salgantall, salgpris) values ('" & ansattid & "', '" & kundeid & "', '" & DateTimePicker1.Value & "', '" & ComboBox1.SelectedItem & "', '" & TextBox5.Text & "', '" & finalpris & "')", con)
-                sqlsalg.ExecuteNonQuery()
+                    Dim sqlvarecng As New MySqlCommand("UPDATE  VARE SET `antall` =  '" & antvare & "' WHERE  `VARE`.`varenavn` = '" & ComboBox1.SelectedItem & "'", con)
+                    sqlvarecng.ExecuteNonQuery()
 
-                Dim sqlvarecng As New MySqlCommand("UPDATE  VARE SET `antall` =  '" & antvare & "' WHERE  `VARE`.`varenavn` = '" & ComboBox1.SelectedItem & "'", con)
-                sqlvarecng.ExecuteNonQuery()
+                    con.Close()
+                    Close()
+                Catch ex As Exception
+                    MessageBox.Show(ex.Message)
+                    con.Close()
+                End Try
 
-                con.Close()
-                Close()
-            Catch ex As Exception
-                MessageBox.Show(ex.Message)
-                con.Close()
-            End Try
-
+            End If
         End If
 
 

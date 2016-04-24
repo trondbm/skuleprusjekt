@@ -12,7 +12,7 @@ Public Class utleie
 
     Private Sub utleie_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         db.DBConnect()
-
+        utleie_table()
         FormBorderStyle = FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
     End Sub

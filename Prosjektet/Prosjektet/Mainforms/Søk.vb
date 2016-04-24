@@ -30,7 +30,6 @@ Public Class Søk
         comboSource.Add("INSTRUKTØR", "Instruktører")
         comboSource.Add("KUNDE", "Kunder")
         comboSource.Add("KURS", "Kurs")
-        comboSource.Add("SAMARBEIDSPARTNER", "Partnere")
         comboSource.Add("UTLEIE", "Utleie")
         comboSource.Add("VARE", "Varer")
         ComboBox1.DataSource = New BindingSource(comboSource, Nothing)
@@ -40,10 +39,7 @@ Public Class Søk
     End Sub
 
 
-
-
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-
+    Private Sub søk_table()
         ResetDataGridView()
 
 
@@ -67,8 +63,13 @@ Public Class Søk
             MsgBox("Error")
 
         End Try
-
     End Sub
+
+    Private Sub combobox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        søk_table()
+    End Sub
+
+
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -77,18 +78,7 @@ Public Class Søk
     End Sub
 
 
-    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
 
-        Dim i As Integer
-
-        For i = 0 To DataGridView1.Columns.Count - 1
-
-            DataGridView1.Columns.Remove(DataGridView1.Columns(0))
-
-        Next
-
-
-    End Sub
 
 
 End Class

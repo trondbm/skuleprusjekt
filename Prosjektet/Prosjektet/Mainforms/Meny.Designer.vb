@@ -24,13 +24,11 @@ Partial Class Meny
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Meny))
         Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -50,24 +48,13 @@ Partial Class Meny
         'Button10
         '
         Me.Button10.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button10.Location = New System.Drawing.Point(339, 242)
+        Me.Button10.Location = New System.Drawing.Point(339, 99)
         Me.Button10.Margin = New System.Windows.Forms.Padding(2)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(97, 50)
         Me.Button10.TabIndex = 30
         Me.Button10.Text = "Brukere"
         Me.Button10.UseVisualStyleBackColor = False
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button9.Location = New System.Drawing.Point(339, 27)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(97, 50)
-        Me.Button9.TabIndex = 29
-        Me.Button9.Text = "Statistikk"
-        Me.Button9.UseVisualStyleBackColor = False
         '
         'Button8
         '
@@ -105,7 +92,7 @@ Partial Class Meny
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button5.Location = New System.Drawing.Point(339, 99)
+        Me.Button5.Location = New System.Drawing.Point(339, 27)
         Me.Button5.Margin = New System.Windows.Forms.Padding(2)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(97, 50)
@@ -123,17 +110,6 @@ Partial Class Meny
         Me.Button4.TabIndex = 24
         Me.Button4.Text = "Salg"
         Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button3.Location = New System.Drawing.Point(339, 170)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(97, 50)
-        Me.Button3.TabIndex = 23
-        Me.Button3.Text = "Kunderegistrering"
-        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
         '
@@ -257,13 +233,11 @@ Partial Class Meny
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button10)
-        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox3)
@@ -281,13 +255,11 @@ Partial Class Meny
     End Sub
 
     Friend WithEvents Button10 As Button
-    Friend WithEvents Button9 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox1 As PictureBox

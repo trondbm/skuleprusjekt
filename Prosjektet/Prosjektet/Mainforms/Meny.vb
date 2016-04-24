@@ -60,7 +60,7 @@
         Close()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         leggtilkunde.Show()
     End Sub
 
@@ -79,7 +79,7 @@
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-        Brukere.show()
+        Brukere.Show()
         Close()
     End Sub
 
@@ -99,7 +99,12 @@
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
-        lager.show()
+        lager.Show()
+        Close()
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs)
+        statistikk.Show()
         Close()
     End Sub
 End Class

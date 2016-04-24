@@ -30,6 +30,8 @@ Partial Class kurs
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,7 +47,7 @@ Partial Class kurs
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 82)
+        Me.Button2.Location = New System.Drawing.Point(12, 152)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(130, 64)
         Me.Button2.TabIndex = 2
@@ -54,7 +56,7 @@ Partial Class kurs
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(12, 222)
+        Me.Button3.Location = New System.Drawing.Point(12, 292)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(130, 64)
         Me.Button3.TabIndex = 3
@@ -66,12 +68,12 @@ Partial Class kurs
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(165, 12)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(742, 274)
+        Me.DataGridView1.Size = New System.Drawing.Size(742, 344)
         Me.DataGridView1.TabIndex = 4
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(12, 152)
+        Me.Button4.Location = New System.Drawing.Point(12, 222)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(130, 64)
         Me.Button4.TabIndex = 5
@@ -80,27 +82,47 @@ Partial Class kurs
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(406, 298)
+        Me.Button5.Location = New System.Drawing.Point(353, 370)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(254, 23)
+        Me.Button5.Size = New System.Drawing.Size(146, 23)
         Me.Button5.TabIndex = 6
-        Me.Button5.Text = "Refresh"
+        Me.Button5.Text = "Kurs"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 298)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 370)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(152, 29)
         Me.PictureBox1.TabIndex = 14
         Me.PictureBox1.TabStop = False
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(12, 82)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(130, 64)
+        Me.Button6.TabIndex = 15
+        Me.Button6.Text = "Påmelding"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(549, 370)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(146, 23)
+        Me.Button7.TabIndex = 16
+        Me.Button7.Text = "Påmeldinger"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'kurs
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(919, 333)
+        Me.ClientSize = New System.Drawing.Size(919, 411)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -123,4 +145,6 @@ Partial Class kurs
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
 End Class

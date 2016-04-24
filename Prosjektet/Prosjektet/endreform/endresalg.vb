@@ -166,6 +166,7 @@ Public Class endresalg
 
         Catch ex As System.Exception
             MessageBox.Show(ex.Message)
+            con.Close()
         End Try
 
 
@@ -173,7 +174,7 @@ Public Class endresalg
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        con.Open()
         Dim kundeid As String
         Dim ansattid As String
         Dim tall As Integer
@@ -192,7 +193,7 @@ Public Class endresalg
 
         Dim antsv As New MySqlCommand("SELECT salgantall FROM SALG where salg_id = '" & ComboBox1.SelectedItem & "'", con)
 
-        con.Open()
+
 
 
         'leser ansattid
@@ -240,23 +241,28 @@ Public Class endresalg
 
         Dim antvare As Integer = organtvare - antall
 
+        If antvare < 0 Then
+            MsgBox("Det er ikke nok varer til å fullføre endringen")
+        Else
+            Try
 
-        Try
 
 
+                Dim sqlsalg As New MySqlCommand("UPDATE SALG SET salgansatt_id='" & ansattid & "', salgkunde_id='" & kundeid & "', salgdato='" & DateTimePicker1.Value & "', salgvare='" & ComboBox2.SelectedItem & "', salgantall='" & TextBox4.Text & "', salgpris='" & finalpris & "' where salg_id=" & ComboBox1.SelectedItem, con)
+                sqlsalg.ExecuteNonQuery()
 
-            Dim sqlsalg As New MySqlCommand("UPDATE SALG SET salgansatt_id='" & ansattid & "', salgkunde_id='" & kundeid & "', salgdato='" & DateTimePicker1.Value & "', salgvare='" & ComboBox2.SelectedItem & "', salgantall='" & TextBox4.Text & "', salgpris='" & finalpris & "' where salg_id=" & ComboBox1.SelectedItem, con)
-            sqlsalg.ExecuteNonQuery()
+                Dim sqlvarecng As New MySqlCommand("UPDATE  VARE SET `antall` =  '" & antvare & "' WHERE  `VARE`.`varenavn` = '" & ComboBox2.SelectedItem & "'", con)
+                sqlvarecng.ExecuteNonQuery()
 
-            Dim sqlvarecng As New MySqlCommand("UPDATE  VARE SET `antall` =  '" & antvare & "' WHERE  `VARE`.`varenavn` = '" & ComboBox2.SelectedItem & "'", con)
-            sqlvarecng.ExecuteNonQuery()
+                con.Close()
+                Close()
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
 
-            con.Close()
-            Close()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-            con.Close()
-        End Try
+            End Try
+
+        End If
+
 
 
 

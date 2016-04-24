@@ -217,6 +217,18 @@
     <Compile Include="Mainforms\utleie.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Mainforms\statistikk.Designer.vb">
+      <DependentUpon>statistikk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mainforms\statistikk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leggtilforms\påmelding.Designer.vb">
+      <DependentUpon>påmelding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="leggtilforms\påmelding.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="endreform\endrelager.resx">
@@ -233,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="leggtilforms\leggtilutleie.resx">
       <DependentUpon>leggtilutleie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leggtilforms\påmelding.resx">
+      <DependentUpon>påmelding.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mainforms\Brukere.resx">
       <DependentUpon>Brukere.vb</DependentUpon>
@@ -284,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mainforms\utleie.resx">
       <DependentUpon>utleie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainforms\statistikk.resx">
+      <DependentUpon>statistikk.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

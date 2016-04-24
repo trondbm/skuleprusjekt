@@ -9,11 +9,34 @@ Public Class kurs
 
     Public Sub load_table()
         DataGridView1.DataSource = dataset
+        dataset.Columns.Clear()
+
         DataGridView1.DataSource = Nothing
         dataset.Clear()
         Try
             Dim query As String
             query = "Select * from KURS"
+            Dim sqlsøk = New MySqlCommand(query, con)
+            sda.SelectCommand = sqlsøk
+            sda.Fill(dataset)
+            bsource.DataSource = dataset
+            DataGridView1.DataSource = bsource
+            sda.Update(dataset)
+
+        Catch ex As MySqlException
+            MsgBox("Error")
+        End Try
+    End Sub
+
+    Public Sub load_pamelding()
+        DataGridView1.DataSource = dataset
+        dataset.Columns.Clear()
+
+        DataGridView1.DataSource = Nothing
+        dataset.Clear()
+        Try
+            Dim query As String
+            query = "Select * from MELDTPÅ_KURS"
             Dim sqlsøk = New MySqlCommand(query, con)
             sda.SelectCommand = sqlsøk
             sda.Fill(dataset)
@@ -91,13 +114,15 @@ Public Class kurs
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        DataGridView1.DataSource = dataset
-        DataGridView1.DataSource = Nothing
-        dataset.Clear()
         load_table()
     End Sub
 
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        påmelding.show()
+        AddHandler påmelding.FormClosed, AddressOf load_pamelding
+    End Sub
 
-
-
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        load_pamelding()
+    End Sub
 End Class

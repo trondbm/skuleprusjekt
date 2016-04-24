@@ -38,7 +38,7 @@ Partial Class utleie
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(146, 12)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(762, 266)
+        Me.DataGridView1.Size = New System.Drawing.Size(851, 266)
         Me.DataGridView1.TabIndex = 21
         '
         'PictureBox1
@@ -91,7 +91,7 @@ Partial Class utleie
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(948, 335)
+        Me.ClientSize = New System.Drawing.Size(1009, 335)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button6)
