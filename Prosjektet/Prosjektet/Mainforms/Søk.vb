@@ -8,14 +8,6 @@ Public Class Søk
     Dim bsource As New BindingSource
     Dim tabell As String
 
-    Private Sub ResetDataGridView()
-        DataGridView1.DataSource = dataset
-        dataset.Columns.Clear()
-
-        DataGridView1.DataSource = Nothing
-        dataset.Clear()
-
-    End Sub
 
 
     Private Sub Søk_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -26,8 +18,8 @@ Public Class Søk
 
         Dim comboSource As New Dictionary(Of String, String)()
         comboSource.Add("ANSATT", "Ansatte")
-        comboSource.Add("BESTILLING", "Bestillinger")
-        comboSource.Add("INSTRUKTØR", "Instruktører")
+        comboSource.Add("SALG", "Salg")
+
         comboSource.Add("KUNDE", "Kunder")
         comboSource.Add("KURS", "Kurs")
         comboSource.Add("UTLEIE", "Utleie")
@@ -40,9 +32,13 @@ Public Class Søk
 
 
     Private Sub søk_table()
-        ResetDataGridView()
 
 
+        DataGridView1.DataSource = dataset
+        dataset.Columns.Clear()
+
+        DataGridView1.DataSource = Nothing
+        dataset.Clear()
 
 
         Dim key As String = DirectCast(ComboBox1.SelectedItem, KeyValuePair(Of String, String)).Key
@@ -66,6 +62,7 @@ Public Class Søk
     End Sub
 
     Private Sub combobox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+
         søk_table()
     End Sub
 

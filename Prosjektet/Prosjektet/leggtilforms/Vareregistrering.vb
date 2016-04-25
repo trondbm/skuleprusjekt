@@ -47,6 +47,8 @@ Public Class Vareregistrering
             lager = "Tromsø"
         End If
 
+        TextBox3.Text = TextBox3.Text.Replace(".", ",")
+
         If TextBox1.Text = "" Then
             MsgBox("Du må skrive inn et varenavn!", MsgBoxStyle.Critical, "Error")
         ElseIf IsNumeric(TextBox2.Text) = False Then
@@ -60,12 +62,11 @@ Public Class Vareregistrering
         ElseIf IsNumeric(TextBox3.text) = False Then
             MsgBox("Prisen må være et tall!", MsgBoxStyle.Critical, "Error")
         Else
-
+            TextBox3.Text = TextBox3.Text.Replace(".", ",")
             varenavn = TextBox1.Text
             antall = TextBox2.Text
             pris = TextBox3.Text
 
-            MsgBox("Varenavn: " & varenavn & vbCrLf & "Antall: " & antall & vbCrLf & "Varegruppe: " & varegruppe & vbCrLf & "Lager: " & lager, MsgBoxStyle.Information, "Suksess!")
 
 
 

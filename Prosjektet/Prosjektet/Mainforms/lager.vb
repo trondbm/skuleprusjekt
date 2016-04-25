@@ -78,25 +78,25 @@ Public Class lager
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
 
 
+        con.Dispose()
 
-
-        vare = InputBox("Hvilken kurs_id vil du slette?", "Slett kurs")
+        vare = InputBox("Hvilken vare_id vil du slette?", "Slett vare")
 
         If vare = "" Then
             load_table()
         ElseIf IsNumeric(vare) = False Then
             MsgBox("Du må skrive et tall!", MsgBoxStyle.Critical, "Error")
-        ElseIf vare
-
+        Else
+            con.Open()
             Try
                 Dim sqlkurs = New MySqlCommand("DELETE FROM VARE WHERE vareID = " & vare, con)
 
 
 
                 sqlkurs.ExecuteNonQuery()
-
+                con.Close()
             Catch ex As MySqlException
-
+                con.Close()
             End Try
 
             load_table()
