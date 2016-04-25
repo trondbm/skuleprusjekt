@@ -83,9 +83,6 @@ Public Class endreansatt
             stilling = "Lagerarbeider"
         ElseIf RadioButton3.Checked Then
             stilling = "IT-hjelp"
-        ElseIf RadioButton4.Checked Then
-            stilling = "Instruktør"
-
 
         End If
 

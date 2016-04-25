@@ -69,7 +69,7 @@ Public Class kurs
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Meny.Show()
+
         Close()
     End Sub
 
@@ -78,22 +78,24 @@ Public Class kurs
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
 
 
-
+        con.Dispose()
 
         kurs = InputBox("Hvilken kurs_id vil du slette?", "Slett kurs")
 
         If kurs = "" Then
-            load_table()
+
         ElseIf IsNumeric(kurs) = False Then
             MsgBox("Du må skrive et tall!", MsgBoxStyle.Critical, "Error")
         ElseIf kurs
 
             Try
+                con.Open()
                 Dim sqlkurs = New MySqlCommand("DELETE FROM KURS WHERE kurs_id = " & kurs, con)
 
 
 
                 sqlkurs.ExecuteNonQuery()
+                con.Close()
 
             Catch ex As MySqlException
 

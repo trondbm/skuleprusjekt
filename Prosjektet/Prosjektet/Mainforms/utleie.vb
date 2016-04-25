@@ -37,8 +37,8 @@ Public Class utleie
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-            Meny.Show()
-            Close()
+
+        Close()
         End Sub
 
 

@@ -24,8 +24,7 @@ Public Class leggtilansatt
             stilling = "Lagerarbeider"
         ElseIf RadioButton3.Checked Then
             stilling = "IT-hjelp"
-        ElseIf RadioButton4.Checked Then
-            stilling = "Instruktør"
+
         Else MsgBox("Velg stilling", MsgBoxStyle.Critical, "Error")
         End If
 

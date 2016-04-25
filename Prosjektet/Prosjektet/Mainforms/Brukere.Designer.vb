@@ -56,7 +56,7 @@ Partial Class Brukere
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(130, 64)
         Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Meny"
+        Me.Button3.Text = "Lukk"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2

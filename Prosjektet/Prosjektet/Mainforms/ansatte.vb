@@ -41,7 +41,7 @@ Public Class ansatte
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Meny.Show()
+
         Close()
     End Sub
 

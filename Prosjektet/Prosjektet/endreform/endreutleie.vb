@@ -255,7 +255,7 @@ Public Class endreutleie
 
             Try
 
-                Dim sqlsalg As New MySqlCommand("UPDATE UTLEIE SET startdato='" & DateTimePicker3.Value & "', sluttdato='" & DateTimePicker2.Value & "', utleie_vare='" & ComboBox5.SelectedItem & "', utleie_antall='" & TextBox5.Text & "', utleie_pris='" & Label10.Text & "', kundeid='" & kundeid & "', ansatt_id='" & ansattid & "' where utleieid=" & ComboBox1.SelectedItem, con)
+                Dim sqlsalg As New MySqlCommand("UPDATE UTLEIE SET startdato='" & DateTimePicker3.Value & "', sluttdato='" & DateTimePicker2.Value & "', utleie_vare='" & ComboBox5.SelectedItem & "', utleie_antall='" & TextBox5.Text & "', utleie_pris='" & Label10.Text & "', kundeid='" & kundeid & "', ansatt_id='" & ansattid & "' where utleieid='" & ComboBox1.SelectedItem & "'", con)
                 sqlsalg.ExecuteNonQuery()
 
                 Dim sqlvarecng As New MySqlCommand("UPDATE  VARE SET `antall` =  '" & antvare & "' WHERE  `VARE`.`varenavn` = '" & ComboBox5.SelectedItem & "'", con)

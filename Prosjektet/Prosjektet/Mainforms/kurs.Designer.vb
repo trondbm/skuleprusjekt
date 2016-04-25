@@ -60,7 +60,7 @@ Partial Class kurs
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(130, 64)
         Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Meny"
+        Me.Button3.Text = "Lukk"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'DataGridView1
@@ -68,7 +68,7 @@ Partial Class kurs
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(165, 12)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(742, 344)
+        Me.DataGridView1.Size = New System.Drawing.Size(863, 344)
         Me.DataGridView1.TabIndex = 4
         '
         'Button4
@@ -82,7 +82,7 @@ Partial Class kurs
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(353, 370)
+        Me.Button5.Location = New System.Drawing.Point(438, 370)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(146, 23)
         Me.Button5.TabIndex = 6
@@ -109,7 +109,7 @@ Partial Class kurs
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(549, 370)
+        Me.Button7.Location = New System.Drawing.Point(680, 370)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(146, 23)
         Me.Button7.TabIndex = 16
@@ -121,7 +121,7 @@ Partial Class kurs
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(919, 411)
+        Me.ClientSize = New System.Drawing.Size(1040, 411)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.PictureBox1)

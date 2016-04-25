@@ -70,7 +70,7 @@ Partial Class påmelding
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(90, 33)
         Me.Button1.TabIndex = 31
-        Me.Button1.Text = "Endre salg"
+        Me.Button1.Text = "Meld på"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'ComboBox4

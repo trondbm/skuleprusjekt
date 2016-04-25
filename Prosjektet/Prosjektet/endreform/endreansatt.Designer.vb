@@ -32,7 +32,6 @@ Partial Class endreansatt
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
@@ -42,7 +41,7 @@ Partial Class endreansatt
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(33, 310)
+        Me.Label6.Location = New System.Drawing.Point(32, 275)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(37, 13)
         Me.Label6.TabIndex = 36
@@ -51,7 +50,7 @@ Partial Class endreansatt
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(37, 224)
+        Me.Label3.Location = New System.Drawing.Point(36, 189)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(36, 13)
         Me.Label3.TabIndex = 33
@@ -59,7 +58,7 @@ Partial Class endreansatt
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(100, 331)
+        Me.Button1.Location = New System.Drawing.Point(99, 296)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(90, 33)
         Me.Button1.TabIndex = 31
@@ -68,7 +67,7 @@ Partial Class endreansatt
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(89, 303)
+        Me.TextBox4.Location = New System.Drawing.Point(88, 268)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(119, 20)
         Me.TextBox4.TabIndex = 26
@@ -93,7 +92,7 @@ Partial Class endreansatt
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(33, 270)
+        Me.Label4.Location = New System.Drawing.Point(32, 235)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(22, 13)
         Me.Label4.TabIndex = 38
@@ -101,41 +100,29 @@ Partial Class endreansatt
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(89, 263)
+        Me.TextBox1.Location = New System.Drawing.Point(88, 228)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(119, 20)
         Me.TextBox1.TabIndex = 37
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(89, 221)
+        Me.TextBox2.Location = New System.Drawing.Point(88, 186)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(119, 20)
         Me.TextBox2.TabIndex = 39
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton4)
         Me.GroupBox1.Controls.Add(Me.RadioButton3)
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
         Me.GroupBox1.Location = New System.Drawing.Point(25, 74)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(206, 122)
+        Me.GroupBox1.Size = New System.Drawing.Size(206, 92)
         Me.GroupBox1.TabIndex = 40
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Stilling:"
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(85, 83)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(69, 17)
-        Me.RadioButton4.TabIndex = 3
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "Instruktør"
-        Me.RadioButton4.UseVisualStyleBackColor = True
         '
         'RadioButton3
         '
@@ -174,7 +161,7 @@ Partial Class endreansatt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(269, 397)
+        Me.ClientSize = New System.Drawing.Size(269, 351)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label4)
@@ -203,7 +190,6 @@ Partial Class endreansatt
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton4 As RadioButton
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton

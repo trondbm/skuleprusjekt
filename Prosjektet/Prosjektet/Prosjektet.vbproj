@@ -76,10 +76,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="endreansatt.Designer.vb">
+    <Compile Include="endreform\endreansatt.Designer.vb">
       <DependentUpon>endreansatt.vb</DependentUpon>
     </Compile>
-    <Compile Include="endreansatt.vb">
+    <Compile Include="endreform\endreansatt.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Mainforms\ansatte.Designer.vb">
@@ -243,7 +243,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="endreansatt.resx">
+    <EmbeddedResource Include="endreform\endreansatt.resx">
       <DependentUpon>endreansatt.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="endreform\endrelager.resx">

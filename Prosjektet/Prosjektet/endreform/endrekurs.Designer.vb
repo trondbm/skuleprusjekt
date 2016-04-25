@@ -33,20 +33,18 @@ Partial Class endrekurs
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 178)
+        Me.Label3.Location = New System.Drawing.Point(2, 226)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(62, 13)
         Me.Label3.TabIndex = 56
@@ -54,21 +52,21 @@ Partial Class endrekurs
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(86, 133)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(86, 181)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(147, 20)
         Me.DateTimePicker1.TabIndex = 55
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(86, 255)
+        Me.TextBox6.Location = New System.Drawing.Point(86, 360)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(147, 20)
         Me.TextBox6.TabIndex = 54
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(86, 220)
+        Me.TextBox5.Location = New System.Drawing.Point(86, 268)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(147, 20)
         Me.TextBox5.TabIndex = 53
@@ -76,7 +74,7 @@ Partial Class endrekurs
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(24, 262)
+        Me.Label6.Location = New System.Drawing.Point(23, 363)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(40, 13)
         Me.Label6.TabIndex = 52
@@ -85,7 +83,7 @@ Partial Class endrekurs
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(24, 223)
+        Me.Label5.Location = New System.Drawing.Point(8, 271)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(55, 13)
         Me.Label5.TabIndex = 51
@@ -94,7 +92,7 @@ Partial Class endrekurs
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(24, 133)
+        Me.Label2.Location = New System.Drawing.Point(31, 181)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(33, 13)
         Me.Label2.TabIndex = 50
@@ -103,7 +101,7 @@ Partial Class endrekurs
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(24, 96)
+        Me.Label1.Location = New System.Drawing.Point(28, 96)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(36, 13)
         Me.Label1.TabIndex = 49
@@ -118,7 +116,7 @@ Partial Class endrekurs
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(86, 305)
+        Me.Button2.Location = New System.Drawing.Point(86, 410)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(147, 50)
         Me.Button2.TabIndex = 47
@@ -134,84 +132,66 @@ Partial Class endrekurs
         Me.Label4.TabIndex = 58
         Me.Label4.Text = "Kurs id:"
         '
-        'NumericUpDown2
-        '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(86, 55)
-        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {500, 0, 0, 0})
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(52, 20)
-        Me.NumericUpDown2.TabIndex = 59
-        Me.NumericUpDown2.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(86, 175)
+        Me.TextBox2.Location = New System.Drawing.Point(86, 223)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(147, 20)
         Me.TextBox2.TabIndex = 60
         '
-        'CheckBox2
+        'ComboBox1
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(264, 96)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(54, 17)
-        Me.CheckBox2.TabIndex = 62
-        Me.CheckBox2.Text = "Endre"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(86, 54)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(147, 21)
+        Me.ComboBox1.TabIndex = 61
         '
-        'CheckBox3
+        'Label7
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(264, 133)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(54, 17)
-        Me.CheckBox3.TabIndex = 63
-        Me.CheckBox3.Text = "Endre"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(15, 320)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(48, 13)
+        Me.Label7.TabIndex = 62
+        Me.Label7.Text = "Påmeldt:"
         '
-        'CheckBox4
+        'Label8
         '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(264, 174)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(54, 17)
-        Me.CheckBox4.TabIndex = 64
-        Me.CheckBox4.Text = "Endre"
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(83, 320)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(0, 13)
+        Me.Label8.TabIndex = 63
         '
-        'CheckBox5
+        'ComboBox2
         '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(264, 220)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(54, 17)
-        Me.CheckBox5.TabIndex = 65
-        Me.CheckBox5.Text = "Endre"
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(86, 134)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(147, 21)
+        Me.ComboBox2.TabIndex = 64
         '
-        'CheckBox6
+        'Label9
         '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(264, 262)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(54, 17)
-        Me.CheckBox6.TabIndex = 66
-        Me.CheckBox6.Text = "Endre"
-        Me.CheckBox6.UseVisualStyleBackColor = True
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(23, 137)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(40, 13)
+        Me.Label9.TabIndex = 65
+        Me.Label9.Text = "Ansatt:"
         '
         'endrekurs
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(335, 394)
-        Me.Controls.Add(Me.CheckBox6)
-        Me.Controls.Add(Me.CheckBox5)
-        Me.Controls.Add(Me.CheckBox4)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox2)
+        Me.ClientSize = New System.Drawing.Size(303, 503)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.NumericUpDown2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.DateTimePicker1)
@@ -226,7 +206,6 @@ Partial Class endrekurs
         Me.Name = "endrekurs"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "endrekurs"
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -242,11 +221,10 @@ Partial Class endrekurs
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents NumericUpDown2 As NumericUpDown
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents CheckBox6 As CheckBox
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label9 As Label
 End Class

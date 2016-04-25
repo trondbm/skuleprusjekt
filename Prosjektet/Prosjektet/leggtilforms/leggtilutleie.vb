@@ -161,6 +161,14 @@ Public Class leggtilutleie
 
             rde.Close()
 
+            Dim poeng As Integer
+            Dim png As New MySqlCommand("SELECT kundepoeng FROM KUNDE where navn = '" & ComboBox3.SelectedItem & "'", con)
+
+            Dim rdpoeng As MySqlDataReader = png.ExecuteReader()
+            rdpoeng.Read()
+
+            poeng = rdpoeng("kundepoeng")
+            rdpoeng.Close()
 
 
             Dim antvare As Integer = tall - antall
@@ -175,6 +183,9 @@ Public Class leggtilutleie
 
                     Dim sqlvarecng As New MySqlCommand("UPDATE  VARE SET `antall` =  '" & antvare & "' WHERE  `VARE`.`varenavn` = '" & ComboBox1.SelectedItem & "'", con)
                     sqlvarecng.ExecuteNonQuery()
+
+                    Dim sqlpoeng As New MySqlCommand("UPDATE KUNDE SET `kundepoeng` =  '" & poeng + TextBox5.Text & "' WHERE  `KUNDE`.`navn` = '" & ComboBox3.SelectedItem & "'", con)
+                    sqlpoeng.ExecuteNonQuery()
 
                     con.Close()
                     Close()

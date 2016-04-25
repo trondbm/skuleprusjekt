@@ -198,6 +198,15 @@ Public Class påmelding
         rdmax.Close()
 
 
+        Dim poeng As Integer
+        Dim png As New MySqlCommand("SELECT kundepoeng FROM KUNDE where navn = '" & ComboBox4.SelectedItem & "'", con)
+
+        Dim rdpoeng As MySqlDataReader = png.ExecuteReader()
+        rdpoeng.Read()
+
+        poeng = rdpoeng("kundepoeng")
+        rdpoeng.Close()
+
 
 
 
@@ -216,6 +225,9 @@ Public Class påmelding
 
                 Dim sqlpmldcng As New MySqlCommand("UPDATE  KURS SET `påmeldt` =  '" & påmeldt + 1 & "' WHERE  `KURS`.`kurs_id` = '" & ComboBox1.SelectedItem & "'", con)
                 sqlpmldcng.ExecuteNonQuery()
+
+                Dim sqlpoeng As New MySqlCommand("UPDATE KUNDE SET `kundepoeng` =  '" & poeng + 1 & "' WHERE  `KUNDE`.`navn` = '" & ComboBox4.SelectedItem & "'", con)
+                sqlpoeng.ExecuteNonQuery()
 
                 con.Close()
                 Close()

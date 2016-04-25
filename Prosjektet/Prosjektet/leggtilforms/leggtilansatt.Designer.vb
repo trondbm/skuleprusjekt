@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class leggtilansatt
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,13 @@ Partial Class leggtilansatt
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
@@ -41,14 +40,14 @@ Partial Class leggtilansatt
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(110, 282)
+        Me.TextBox6.Location = New System.Drawing.Point(110, 234)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(147, 20)
         Me.TextBox6.TabIndex = 32
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(110, 247)
+        Me.TextBox5.Location = New System.Drawing.Point(110, 199)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(147, 20)
         Me.TextBox5.TabIndex = 31
@@ -56,7 +55,7 @@ Partial Class leggtilansatt
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(48, 285)
+        Me.Label6.Location = New System.Drawing.Point(48, 237)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(46, 13)
         Me.Label6.TabIndex = 30
@@ -65,7 +64,7 @@ Partial Class leggtilansatt
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(48, 250)
+        Me.Label5.Location = New System.Drawing.Point(48, 202)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(37, 13)
         Me.Label5.TabIndex = 29
@@ -73,27 +72,15 @@ Partial Class leggtilansatt
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton4)
         Me.GroupBox1.Controls.Add(Me.RadioButton3)
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
         Me.GroupBox1.Location = New System.Drawing.Point(51, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(206, 122)
+        Me.GroupBox1.Size = New System.Drawing.Size(206, 92)
         Me.GroupBox1.TabIndex = 26
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Stilling:"
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(85, 83)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(69, 17)
-        Me.RadioButton4.TabIndex = 3
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "Instruktør"
-        Me.RadioButton4.UseVisualStyleBackColor = True
         '
         'RadioButton3
         '
@@ -131,7 +118,7 @@ Partial Class leggtilansatt
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(48, 201)
+        Me.Label2.Location = New System.Drawing.Point(48, 153)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(56, 13)
         Me.Label2.TabIndex = 23
@@ -140,7 +127,7 @@ Partial Class leggtilansatt
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(48, 164)
+        Me.Label1.Location = New System.Drawing.Point(48, 116)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 13)
         Me.Label1.TabIndex = 22
@@ -148,21 +135,21 @@ Partial Class leggtilansatt
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(110, 198)
+        Me.TextBox2.Location = New System.Drawing.Point(110, 150)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(147, 20)
         Me.TextBox2.TabIndex = 21
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(110, 161)
+        Me.TextBox1.Location = New System.Drawing.Point(110, 113)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(147, 20)
         Me.TextBox1.TabIndex = 20
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(79, 336)
+        Me.Button1.Location = New System.Drawing.Point(79, 288)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(147, 50)
         Me.Button1.TabIndex = 19
@@ -173,7 +160,7 @@ Partial Class leggtilansatt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(312, 413)
+        Me.ClientSize = New System.Drawing.Size(312, 356)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label6)
@@ -207,5 +194,4 @@ Partial Class leggtilansatt
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents RadioButton4 As RadioButton
 End Class

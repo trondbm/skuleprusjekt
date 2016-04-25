@@ -65,7 +65,7 @@ Partial Class ansatte
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(130, 64)
         Me.Button3.TabIndex = 16
-        Me.Button3.Text = "Meny"
+        Me.Button3.Text = "Lukk"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
@@ -90,6 +90,7 @@ Partial Class ansatte
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(832, 332)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button4)

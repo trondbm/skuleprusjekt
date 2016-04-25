@@ -66,7 +66,7 @@ Partial Class salg
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(114, 62)
         Me.Button6.TabIndex = 5
-        Me.Button6.Text = "Meny"
+        Me.Button6.Text = "Lukk"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'PictureBox1

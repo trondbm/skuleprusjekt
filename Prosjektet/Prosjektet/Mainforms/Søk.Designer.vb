@@ -45,7 +45,7 @@ Partial Class Søk
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(120, 55)
         Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Meny"
+        Me.Button2.Text = "Lukk"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'ComboBox1

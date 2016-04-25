@@ -73,7 +73,7 @@ Public Class Søk
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Meny.Show()
+
         Close()
     End Sub
 

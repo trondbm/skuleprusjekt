@@ -124,7 +124,7 @@ Public Class endrelager
 
         Try
             con.Open()
-            Dim sqlsalg As New MySqlCommand("UPDATE VARE SET varenavn='" & TextBox1.Text & "', varegruppe='" & ComboBox2.SelectedItem & "', bruk='" & ComboBox4.SelectedItem & "', tilstand='" & ComboBox3.SelectedItem & "', lager='" & ComboBox5.SelectedItem & "', status='" & ComboBox6.SelectedItem & "', antall='" & TextBox2.Text & "', pris='" & TextBox3.Text & "' where vareID=" & ComboBox1.SelectedItem, con)
+            Dim sqlsalg As New MySqlCommand("UPDATE VARE SET varenavn='" & TextBox1.Text & "', varegruppe='" & ComboBox2.SelectedItem & "', bruk='" & ComboBox4.SelectedItem & "', tilstand='" & ComboBox5.SelectedItem & "', lager='" & ComboBox3.SelectedItem & "', status='" & ComboBox6.SelectedItem & "', antall='" & TextBox2.Text & "', pris='" & TextBox3.Text & "' where vareID=" & ComboBox1.SelectedItem, con)
 
 
 

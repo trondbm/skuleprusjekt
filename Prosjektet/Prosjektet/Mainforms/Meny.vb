@@ -53,7 +53,7 @@
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         salg.Show()
-        Close()
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs)
@@ -66,22 +66,22 @@
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         kurs.Show()
-        Close()
+
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Søk.Show()
-        Close()
+
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         Brukere.Show()
-        Close()
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         utleie.Show()
-        Close()
+
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
@@ -96,11 +96,6 @@
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
         lager.Show()
-        Close()
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs)
-        statistikk.Show()
-        Close()
-    End Sub
 End Class
