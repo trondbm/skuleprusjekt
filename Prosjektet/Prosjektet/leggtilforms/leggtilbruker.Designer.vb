@@ -31,6 +31,8 @@ Partial Class leggtilbruker
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -81,7 +83,7 @@ Partial Class leggtilbruker
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(63, 233)
+        Me.Button1.Location = New System.Drawing.Point(63, 293)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(159, 50)
         Me.Button1.TabIndex = 19
@@ -91,7 +93,7 @@ Partial Class leggtilbruker
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(34, 147)
+        Me.Label1.Location = New System.Drawing.Point(34, 198)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(65, 13)
         Me.Label1.TabIndex = 27
@@ -100,7 +102,7 @@ Partial Class leggtilbruker
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(51, 180)
+        Me.Label2.Location = New System.Drawing.Point(51, 231)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(48, 13)
         Me.Label2.TabIndex = 28
@@ -108,23 +110,42 @@ Partial Class leggtilbruker
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(119, 144)
+        Me.TextBox1.Location = New System.Drawing.Point(119, 195)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(118, 20)
         Me.TextBox1.TabIndex = 29
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(119, 177)
+        Me.TextBox2.Location = New System.Drawing.Point(119, 228)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(118, 20)
         Me.TextBox2.TabIndex = 30
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(119, 160)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(118, 21)
+        Me.ComboBox1.TabIndex = 31
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(59, 163)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(40, 13)
+        Me.Label3.TabIndex = 32
+        Me.Label3.Text = "Ansatt:"
         '
         'leggtilbruker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 312)
+        Me.ClientSize = New System.Drawing.Size(284, 373)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
@@ -148,4 +169,6 @@ Partial Class leggtilbruker
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label3 As Label
 End Class

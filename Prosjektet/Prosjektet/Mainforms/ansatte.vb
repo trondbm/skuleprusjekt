@@ -1,19 +1,18 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class Brukere
+Public Class ansatte
 
     Dim db As New DBConnect
     Dim dataset As New DataTable
     Dim sda As New MySqlDataAdapter
     Dim bsource As New BindingSource
-    Dim brukere As String
 
-    Public Sub load_table()
+    Public Sub ansatt_table()
         DataGridView1.DataSource = dataset
         DataGridView1.DataSource = Nothing
         dataset.Clear()
         Try
             Dim query As String
-            query = "Select * from BRUKERE"
+            query = "Select * from ANSATT"
             Dim sqlsøk = New MySqlCommand(query, con)
             sda.SelectCommand = sqlsøk
             sda.Fill(dataset)
@@ -25,82 +24,61 @@ Public Class Brukere
             MsgBox("Error")
         End Try
     End Sub
-
-
-    Private Sub Brukere_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub ansatte_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Text = "Ansatte"
+        ansatt_table()
         FormBorderStyle = FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
-        Me.Text = "Brukere"
         db.DBConnect()
-        load_table()
-
-
-
-
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        leggtilansatt.Show()
 
-        leggtilbruker.Show()
-        AddHandler leggtilbruker.FormClosed, AddressOf load_table
+        AddHandler leggtilansatt.FormClosed, AddressOf ansatt_table
+
+
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Meny.Show()
         Close()
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        endreansatt.Show()
 
+        AddHandler endreansatt.FormClosed, AddressOf ansatt_table
+    End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
 
-
         con.Dispose()
+        Dim ansatt As String
 
+        ansatt = InputBox("Hvilken ansatt vil du slette?" & vbCrLf & "Bruk ansatt_id", "Slett ansatt")
 
-        Dim bruker As String
-
-        bruker = InputBox("Hvilken bruker vil du slette?" & vbCrLf & "Bruk bruker_id", "Slett bruker")
-
-        If bruker = "" Then
-        ElseIf IsNumeric(bruker) = False Then
+        If ansatt = "" Then
+        ElseIf IsNumeric(ansatt) = False Then
             MsgBox("Du må skrive tall", MsgBoxStyle.Critical, "Error")
         Else
             Try
                 con.Open()
-                Dim sqlslettebruker = New MySqlCommand("DELETE FROM `BRUKERE` WHERE `bruker_id` = '" & bruker & "'", con)
+
+                Dim sqlslettebruker = New MySqlCommand("DELETE FROM `ANSATT` WHERE `ansatt_id` = '" & ansatt & "'", con)
 
 
                 sqlslettebruker.ExecuteNonQuery()
                 con.Close()
             Catch ex As MySqlException
-                MsgBox("Fant ikke bruker", MsgBoxStyle.Critical, "Error")
+                MsgBox("Fant ikke ansatt", MsgBoxStyle.Critical, "Error")
             End Try
 
         End If
 
 
-        load_table()
+
+        ansatt_table()
 
     End Sub
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
-
-        AddHandler endrebruker.FormClosed, AddressOf load_table
-        '  kurs = InputBox("Hvilken kurs_id vil du endre?")
-        endrebruker.Show()
-
-
-    End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs)
-        DataGridView1.DataSource = dataset
-        DataGridView1.DataSource = Nothing
-        dataset.Clear()
-        load_table()
-    End Sub
-
-
-
-
 End Class

@@ -76,6 +76,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="endreansatt.Designer.vb">
+      <DependentUpon>endreansatt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="endreansatt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainforms\ansatte.Designer.vb">
+      <DependentUpon>ansatte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mainforms\ansatte.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="endreform\endrelager.Designer.vb">
       <DependentUpon>endrelager.vb</DependentUpon>
     </Compile>
@@ -231,6 +243,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="endreansatt.resx">
+      <DependentUpon>endreansatt.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="endreform\endrelager.resx">
       <DependentUpon>endrelager.vb</DependentUpon>
     </EmbeddedResource>
@@ -248,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="leggtilforms\påmelding.resx">
       <DependentUpon>påmelding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainforms\ansatte.resx">
+      <DependentUpon>ansatte.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mainforms\Brukere.resx">
       <DependentUpon>Brukere.vb</DependentUpon>

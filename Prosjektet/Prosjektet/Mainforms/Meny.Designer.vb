@@ -70,7 +70,7 @@ Partial Class Meny
         'Button7
         '
         Me.Button7.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button7.Location = New System.Drawing.Point(180, 242)
+        Me.Button7.Location = New System.Drawing.Point(180, 99)
         Me.Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(97, 50)
@@ -81,7 +81,7 @@ Partial Class Meny
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button6.Location = New System.Drawing.Point(180, 99)
+        Me.Button6.Location = New System.Drawing.Point(34, 170)
         Me.Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(97, 50)
@@ -97,7 +97,7 @@ Partial Class Meny
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(97, 50)
         Me.Button5.TabIndex = 25
-        Me.Button5.Text = "Ansattregistrering"
+        Me.Button5.Text = "Ansatte"
         Me.Button5.UseVisualStyleBackColor = False
         '
         'Button4

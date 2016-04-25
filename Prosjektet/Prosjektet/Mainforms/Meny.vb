@@ -28,7 +28,7 @@
             Button5.Visible = False
             Button7.Visible = False
             Button2.Visible = False
-            Button6.Visible = False
+
             Button4.Visible = False
             Label3.Visible = True
             PictureBox3.Visible = True
@@ -61,7 +61,7 @@
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        leggtilansatt.Show()
+        ansatte.Show()
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
