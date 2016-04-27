@@ -18,6 +18,8 @@ Public Class endrekurs
         Me.MaximizeBox = False
         db.DBConnect()
         con.Dispose()
+        DateTimePicker1.Format = DateTimePickerFormat.Custom
+        DateTimePicker1.CustomFormat = "dd.MM.yyyy"
 
         'kursid
         Dim id As New MySqlCommand("SELECT kurs_id FROM KURS", con)

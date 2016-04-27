@@ -9,7 +9,11 @@ Public Class endreutleie
         FormBorderStyle = FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         con.Dispose()
+        DateTimePicker2.Format = DateTimePickerFormat.Custom
+        DateTimePicker2.CustomFormat = "dd.MM.yyyy"
 
+        DateTimePicker3.Format = DateTimePickerFormat.Custom
+        DateTimePicker3.CustomFormat = "dd.MM.yyyy"
 
         'salgid
         Dim id As New MySqlCommand("SELECT utleieID FROM UTLEIE", con)

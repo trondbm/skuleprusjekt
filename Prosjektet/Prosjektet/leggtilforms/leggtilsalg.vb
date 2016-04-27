@@ -19,7 +19,10 @@ Public Class leggtilsalg
 
         FormBorderStyle = FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
+        DateTimePicker1.Format = DateTimePickerFormat.Custom
+        DateTimePicker1.CustomFormat = "dd.MM.yyyy"
 
+        DateTimePicker1.Value = DateTime.Now
 
         Dim ans As New MySqlCommand("SELECT navn FROM ANSATT", con)
         Dim ansatt As New List(Of String)

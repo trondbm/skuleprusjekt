@@ -10,7 +10,10 @@ Public Class leggtilutleie
         db.DBConnect()
         con.Dispose()
         'load ansatt
-
+        DateTimePicker1.Format = DateTimePickerFormat.Custom
+        DateTimePicker1.CustomFormat = "dd.MM.yyyy"
+        DateTimePicker2.Format = DateTimePickerFormat.Custom
+        DateTimePicker2.CustomFormat = "dd.MM.yyyy"
 
         FormBorderStyle = FormBorderStyle.FixedSingle
         Me.MaximizeBox = False

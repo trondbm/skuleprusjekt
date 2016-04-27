@@ -127,6 +127,7 @@ Partial Class endreutleie
         '
         'DateTimePicker3
         '
+        Me.DateTimePicker3.CustomFormat = "dd.MM.yyyy"
         Me.DateTimePicker3.Location = New System.Drawing.Point(80, 169)
         Me.DateTimePicker3.Name = "DateTimePicker3"
         Me.DateTimePicker3.Size = New System.Drawing.Size(127, 20)

@@ -14,6 +14,9 @@ Public Class leggtilkurs
         Me.Text = "Legg til kurs"
         db.DBConnect()
         con.Dispose()
+
+        DateTimePicker1.Format = DateTimePickerFormat.Custom
+        DateTimePicker1.CustomFormat = "dd.MM.yyyy"
         'load ansatt
         Dim ans As New MySqlCommand("SELECT navn FROM ANSATT", con)
         Dim ansatt As New List(Of String)

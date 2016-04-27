@@ -10,6 +10,8 @@ Public Class endresalg
         Me.MaximizeBox = False
         con.Dispose()
         Label8.Text = ""
+        DateTimePicker1.Format = DateTimePickerFormat.Custom
+        DateTimePicker1.CustomFormat = "dd.MM.yyyy"
 
         'salgid
         Dim id As New MySqlCommand("SELECT salg_id FROM SALG", con)
